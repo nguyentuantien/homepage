@@ -57,13 +57,7 @@ label {
 a.pure-menu-link {
     line-height: 28pt;
 }
-.pure-menu-active ul.pure-menu-children{
-    display: block;
-    left: 0;
-    padding: 0;
-    margin: 0;
-    width: 100%;
-}
+
 .pure-menu-children li a{
     padding-left: 30px;
 }
@@ -160,7 +154,7 @@ ul.pure-menu-list ul {
 	top: 60px; /* the height of the main nav */
 }
 	
-.pure-menu-active>.pure-menu-children, .pure-menu-allow-hover:hover>.pure-menu-children
+.pure-menu-active>.pure-menu-children
 {
     position: static;
 }
@@ -247,6 +241,7 @@ ul.title-course{
     margin-top: 73px;
 }
 .pure-g.box-plan {
+    margin: 0 90px;
     margin-bottom: 3em;
     background-color: white;
   -webkit-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
@@ -261,6 +256,7 @@ ul.title-course{
         color: black;
     }
 .pure-g.box-plan-two {
+        margin: 0 90px;
     background-color: #0d72b9;
     margin-bottom:  3em;
     -webkit-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
@@ -433,7 +429,22 @@ p.name-author {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
-    
+   
+  .pure-menu-active>.pure-menu-children
+    {
+        position: fixed;
+    }
+    .pure-menu-active>.pure-menu-children{
+        left: 330px;
+    }
+    .pure-menu-active>.pure-menu-children a:hover{
+        background-color: #eee;
+        color: #777;
+    }
+    ul.pure-menu-list li:hover > ul{
+        display: block;
+        text-align: left !important;
+    }
     .g.g--l--reverse {
     display:  flex;
         flex-direction: row-reverse;
@@ -456,7 +467,6 @@ p.name-author {
     }
     a.pure-menu-link {
         line-height: 38px;
-        word-wrap: break-word;
     }
     .custom-wrapper {
           height: 3.3em;
