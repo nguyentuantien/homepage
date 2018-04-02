@@ -52,9 +52,20 @@ label {
 }
 .pure-menu-item {
     line-height: 28pt;
+    display: block;
 }
 a.pure-menu-link {
     line-height: 28pt;
+}
+.pure-menu-active ul.pure-menu-children{
+    display: block;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+.pure-menu-children li a{
+    padding-left: 30px;
 }
 .custom-wrapper {
           background-color: white;
@@ -71,7 +82,7 @@ a.pure-menu-link {
     color: white;
 }
       .custom-wrapper.open {
-          height: 27em;
+          height: 100vh;
       }
       
       .custom-menu-3 {
@@ -140,14 +151,19 @@ img.logo-img {
     height: 40px;
 }
 
-
+.pure-menu-list{
+    display: block;
+}
 /* Hide Dropdowns by Default */
 ul.pure-menu-list ul {
 	display: none;
-	position: absolute; 
 	top: 60px; /* the height of the main nav */
 }
 	
+.pure-menu-active>.pure-menu-children, .pure-menu-allow-hover:hover>.pure-menu-children
+{
+    position: static;
+}
 /* Display Dropdowns on Hover */
 ul.pure-menu-list li:hover > ul {
 	display:inherit;
@@ -155,10 +171,9 @@ ul.pure-menu-list li:hover > ul {
 	
 /* Fisrt Tier Dropdown */
 ul.pure-menu-list ul li {
-	width:170px;
+	width:100%;
 	float:none;
 	display:list-item;
-	position: relative;
 }
 /*--------------- splash-container ----------------------------*/
 .splash-content h1{
@@ -406,9 +421,6 @@ p.name-author {
 
 /*----------------------------------------- Larger than phablet----------------------------------------- */
 @media (min-width: 550px) {
-    img.logo-img {
-        width: 11%;
-    }
    
 /*--------------- splash-container ----------------------------*/
       img.img-banner{
@@ -443,16 +455,13 @@ p.name-author {
         text-align: right;
     }
     a.pure-menu-link {
-        line-height: 54px;
+        line-height: 38px;
+        word-wrap: break-word;
     }
     .custom-wrapper {
-          height: 4.1em;
+          height: 3.3em;
       }
-    img.logo-img {
-        width:100%;
-    }
     .btn-learn, .btn-register{
-        padding: 4px 47px;
         border-radius: 36px;
         margin-right: 10px;
     }
@@ -493,12 +502,7 @@ p.name-author {
 
 /*----------------------------------------- Larger than desktop -----------------------------------------*/
 @media (min-width: 1000px) {
-     .custom-wrapper {
-          height: 5.1em;
-      }
-      a.pure-menu-link {
-        line-height: 70px;
-    }
+ 
     .line-left{
         border-left: 1px solid #cccccc;
     }
@@ -512,9 +516,7 @@ p.name-author {
 
 /*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
 @media (min-width: 1200px) {
-    img.logo-img {
-        width: 54%;
-    }
+   
     .content {
         padding: 0 100px;
     }
