@@ -78,6 +78,7 @@ a.pure-menu-link {
           -moz-transition: height 0.5s;
           -ms-transition: height 0.5s;
           transition: height 0.5s;
+        font-weight: bold;
       }
 .pure-menu-list li a:hover{
     background-color: #0d72b9;
@@ -429,6 +430,7 @@ p.name-author {
 .menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link{
         color:  #0d72b9;
     }
+
 .menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link:hover{
         color: white;
     }
@@ -458,8 +460,17 @@ p.name-author {
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
     /* ------------------menu change color -------------------*/
+    li.pure-menu-active a.pure-menu-link{
+        color: white;
+    }
     
-    
+    .pure-menu-active ul.pure-menu-children li a{
+        text-align: left;
+    }
+    .pure-menu-active>.pure-menu-children
+    {
+        position: absolute;
+    }
    .pure-g.box-plan {
     margin-left: 90px;
        margin-right: 90px;
@@ -473,19 +484,10 @@ p.name-author {
     .custom-wrapper {
     overflow: inherit;
       }
-    .pure-menu-active>.pure-menu-children {
-        left: 253px;
-    }
    
-  .pure-menu-active>.pure-menu-children
-    {
-        position: fixed;
-    }
+   
+  
     
-    .pure-menu-active>.pure-menu-children a:hover{
-        background-color: #0d72b9;
-        color: white;
-    }
     ul.pure-menu-list li:hover > ul{
         display: block;
         text-align: left !important;
@@ -567,16 +569,12 @@ p.name-author {
   .img-cancel{
         display: inline;
     }
-    .pure-menu-active>.pure-menu-children{
-        left: 336px;
-    }
+
 }
 
 /*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
 @media (min-width: 1200px) {
-   .pure-menu-active>.pure-menu-children{
-        left: 578px;
-    }
+   
     .content {
         padding: 0 100px;
     }

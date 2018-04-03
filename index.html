@@ -15,7 +15,7 @@
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
-        <nav>
+        <nav id="nav">
           <!-------------------------Menu---------------------------------------->
           <div class="custom-wrapper pure-g" id="menu">
               <h2 class="hidden">CiOne.vn</h2>
@@ -45,7 +45,6 @@
                           <li class="pure-menu-item"><a href="#" class="pure-menu-link ">Học thế nào?</a></li>
                           <li class="pure-menu-item"><a href="#" class="pure-menu-link">Khóa học</a></li>
                           <li class="pure-menu-item"><a href="#" class="pure-menu-link">Học phí</a></li>
-                           <li class="pure-menu-item"><a href="#" class="pure-menu-link">Liên hệ</a></li>
                            <li class="pure-menu-item"><a href="#" class="pure-menu-link">Đăng ký </a></li>
                            
                       </ul>
@@ -303,12 +302,14 @@
 
             function changeColor() {
                 if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
+                    document.getElementById("nav").classList.add('nav-scrolled') ;
                     document.getElementById("menu").classList.add('background-change') ;
                      document.getElementById("menu-top").classList.add('menu-change') ;
                     document.getElementById("logo").src="https://i.imgur.com/RD9dZzv.png";
                      document.getElementById("toggle").classList.add('change-icon') ;
 
                 } else {
+                    document.getElementById("nav").classList.remove('nav-scrolled') ;
                     document.getElementById("menu").classList.remove('background-change');
                      document.getElementById("menu-top").classList.remove('menu-change');
                    document.getElementById("logo").src="https://i.imgur.com/DXu6LGt.png";
