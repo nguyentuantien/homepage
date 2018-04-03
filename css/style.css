@@ -47,6 +47,7 @@ label {
 }
 /* Mobile first queries */
 /* -------------------Menu--------------------------------------- */
+
 .pure-menu-fixed {
     z-index: 999;
 }
@@ -61,11 +62,18 @@ a.pure-menu-link {
 .pure-menu-children li a{
     padding-left: 30px;
 }
+.pure-menu-link{
+    color: white;
+}
+ .pure-menu-link:focus, .pure-menu-link:hover, .pure-menu-children{
+    background-color: #0d72b9;
+}
+
 .custom-wrapper {
-          background-color: white;
+          background-color: #0d72b9;
+    overflow: hidden;
           -webkit-font-smoothing: antialiased;
           height: 2.1em;
-          overflow: hidden;
           -webkit-transition: height 0.5s;
           -moz-transition: height 0.5s;
           -ms-transition: height 0.5s;
@@ -94,7 +102,7 @@ a.pure-menu-link {
       }
       
       .custom-toggle .bar {
-          background-color: #777;
+          background-color: white;
           display: block;
           width: 20px;
           height: 2px;
@@ -137,14 +145,17 @@ a.pure-menu-link {
     .custom-wrapper{
         width: 100%;
         height: 57px;
-        box-shadow: 0 -4px 20px rgba(0,0,0,.2);
     }
 
 img.logo-img {
     width: 104px;
     height: 40px;
 }
-
+nav{
+    position: sticky;
+    top: 0;
+    z-index: 9;
+}
 .pure-menu-list{
     display: block;
 }
@@ -408,6 +419,25 @@ p.name-author {
     float: left;
     width: 100%;
 }
+
+/*----------Menu--------------------*/
+    .background-change{
+        background-color: white;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+    }
+.change-icon.custom-toggle s.bar{
+    background-color: #1f1717;
+}
+.menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link{
+        color:  #0d72b9;
+    }
+.menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link:hover{
+        color: white;
+    }
+ .menu-change ul.pure-menu-list ul.pure-menu-children{
+        background-color: white;
+    }
+
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
     img.pure-img-responsive.logo-footer {
@@ -429,6 +459,14 @@ p.name-author {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    /* ------------------menu change color -------------------*/
+    
+    
+   
+
+    .custom-wrapper {
+    overflow: inherit;
+      }
     .pure-menu-active>.pure-menu-children {
         left: 253px;
     }
@@ -439,8 +477,8 @@ p.name-author {
     }
     
     .pure-menu-active>.pure-menu-children a:hover{
-        background-color: #eee;
-        color: #777;
+        background-color: #0d72b9;
+        color: white;
     }
     ul.pure-menu-list li:hover > ul{
         display: block;
