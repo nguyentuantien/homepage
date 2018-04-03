@@ -252,7 +252,6 @@ ul.title-course{
     margin-top: 73px;
 }
 .pure-g.box-plan {
-    margin: 0 90px;
     margin-bottom: 3em;
     background-color: white;
   -webkit-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
@@ -267,7 +266,6 @@ ul.title-course{
         color: black;
     }
 .pure-g.box-plan-two {
-        margin: 0 90px;
     background-color: #0d72b9;
     margin-bottom:  3em;
     -webkit-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
@@ -462,7 +460,15 @@ p.name-author {
     /* ------------------menu change color -------------------*/
     
     
-   
+   .pure-g.box-plan {
+    margin-left: 90px;
+       margin-right: 90px;
+   }
+
+.pure-g.box-plan-two {
+      margin-left: 90px;
+       margin-right: 90px;
+}
 
     .custom-wrapper {
     overflow: inherit;
