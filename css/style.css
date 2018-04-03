@@ -219,6 +219,7 @@ ul.pure-menu-list ul li {
 }
 .content.splash-content {
     padding-top: 2em;
+    padding-bottom: 4em;
 }
 /*--------------- learn-plan----------------------------*/
 ul.title-course li{
@@ -317,7 +318,7 @@ ul.title-course.title-course-two li {
 }
 .accordion.active{
     color: red;
-    width: 125px;
+    width: 100%;
 }
 .accordion.panel-two.active{
     color: #0d72b9;
@@ -437,7 +438,9 @@ p.name-author {
  .menu-change ul.pure-menu-list ul.pure-menu-children{
         background-color: white;
     }
-
+.pure-menu-active>.pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover{
+    background-color: transparent;
+}
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
     img.pure-img-responsive.logo-footer {
@@ -460,6 +463,32 @@ p.name-author {
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
     /* ------------------menu change color -------------------*/
+    .pure-menu-has-children:hover, .pure-menu-has-children:hover > .pure-menu-link{
+        background-color: #fff;
+        color: #0d72b9
+    }
+    .pure-menu-list li a:hover {
+        background-color: #fff;
+        color: #0d72b9;
+    }
+    .menu-change ul.pure-menu-list li a:hover {
+        background-color: #efefef;
+        color: #0d72b9;
+    }
+    .pure-menu-has-children li.pure-menu-item a:hover {
+        background-color: #efefef;
+    }
+    .menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link:hover {
+        color: #0d72b9;
+    }
+   ul.pure-menu-list ul.pure-menu-children{
+        background-color: white;
+    }
+     ul.pure-menu-list ul.pure-menu-children li a{
+       color: #0d72b9;
+    }
+    
+    
     li.pure-menu-active a.pure-menu-link{
         color: white;
     }
@@ -529,6 +558,7 @@ p.name-author {
     }
     .content.splash-content {
         padding-top: 12em;
+        
     }
     .splash-content h1 {
         line-height: 42px;
@@ -554,6 +584,7 @@ p.name-author {
     }
  .pure-g.box-how-learn {
    padding: 0px 90px 0 90px;
+     margin-bottom: 4em;
     }
 }
 
