@@ -21,7 +21,9 @@ h6,
 label {
     color: #34495e;
 }
-
+.text-path{
+    color: white;
+}
 .pure-img-responsive {
     max-width: 100%;
     height: auto;
@@ -65,6 +67,14 @@ a.pure-menu-link {
 .pure-menu-link{
     color: white;
 }
+.pull-right{
+    text-align: right;
+}
+
+.register-mobile{
+    float: right;
+    display: inline-block;
+}
  .pure-menu-link:focus, .pure-menu-link:hover, .pure-menu-children{
     background-color: #0d72b9;
 }
@@ -88,7 +98,7 @@ a.pure-menu-link {
           height: 100vh;
       }
       
-           
+
       .custom-toggle {
           width: 36px;
           height: 41px;
@@ -183,6 +193,13 @@ a.pure-menu-link {
         float:none;
         display:list-item;
     }
+    .menu-change a.pure-menu-link.active-two.menu-register {
+        color: #0d72b9;
+    }
+a.pure-menu-link.active-two.menu-register:hover{
+    background-color: #0d72b9;
+    color: white;
+}
 /*--------------- splash-container ----------------------------*/
 .splash-content p{
     line-height: 20pt;
@@ -190,8 +207,8 @@ a.pure-menu-link {
 .splash-content h1{
        line-height: 42px;
     font-size: 42px;
-    color: white;
 }
+
 .splash-container{
      z-index:  9;
     width: 100%;
@@ -482,12 +499,42 @@ img.pure-img-responsive.logo-footer {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    .menu-register{
+    display: inline-block;
+    color: #0d72b9;
+    float: right;
+    margin-right: 30px;
+    }   
+    .active-two.menu-register{
+        background-color: #0d72b9;
+        color: white;
+        border:  1px solid;
+        line-height: 51px;
+    }
+    .menu-change.menu-change a.pure-menu-link.active-two.menu-register{
+        color: white;
+        background-color: #f15a24;
+        border: none;
+    }
+    
+      .menu-change a.pure-menu-link.active-two.menu-register:hover{
+          background-color: #f15a24;
+    }
+    .menu-change a.pure-menu-link.active-two.menu-register{
+        color: white;
+    }
+    h1#rain-learn {
+        margin-top:  3em;
+    }
+    .text-path{
+        color: black;
+    }
+       img.logo-img {
+       margin-top: 5px;
+    }
     .learn-plan-content {
        margin-bottom: 5px;
         margin-left: 33px;
-    }
-     .custom-menu-3 {
-       text-align: right;
     }
     /* ------------------menu change color -------------------*/
     .menu-change ul.pure-menu-list ul.pure-menu-children{
@@ -607,7 +654,7 @@ img.pure-img-responsive.logo-footer {
     }
    
     a.pure-menu-link {
-        line-height: 49px;
+        line-height: 50px;
     }
     .custom-wrapper {
           height: 4em;
@@ -678,6 +725,9 @@ img.pure-img-responsive.logo-footer {
 
 /*----------------------------------------- Larger than desktop -----------------------------------------*/
 @media (min-width: 1000px) {
+    h1#rain-learn{
+        margin-top: 0;
+    }
      .splash-content {
         position:  relative;
         top: 1em;
@@ -716,8 +766,7 @@ img.pure-img-responsive.logo-footer {
 
 /*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
 @media (min-width: 1200px) {
-   img.logo-img {
-        margin-left: 64px;
+   img.logo-img { 
        margin-top: 5px;
     }
     .content {
