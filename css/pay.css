@@ -1,0 +1,951 @@
+
+*{
+    box-sizing: border-box;
+    font-family: 'Nunito',sans-serif;
+}
+body {
+    line-height: 28px;
+    font-size: 17px;
+    font-weight: 300;
+    background-color: #f4f4f4;
+}
+.hidden{
+    display: none;
+}
+.color-white{
+    color: white;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+label {
+    color: #34495e;
+}
+
+.pure-img-responsive {
+    max-width: 100%;
+    height: auto;
+}
+.content {
+    padding: 1em 1em 3em;
+}
+/*
+ * -- LAYOUT STYLES --
+ * These are some useful classes which I will need----------------------------------------------------------------------------------
+ */
+.l-box {
+    padding: 1em;
+}
+
+.l-box-lrg {
+    padding: 2em;
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+
+.is-center {
+    text-align: center;
+}
+/* Mobile first queries */
+
+.box-header-content{
+    position: relative;
+    z-index: 2;
+}
+.box-footer{
+    background-color: white;
+    padding: 20px;
+    font-weight: bold;
+}
+.first-text{
+    color: #938f8f;
+    margin-bottom: -24px;
+}
+.second-text{
+    color: black;
+}
+.box-footer h3{
+    color: #128eb2;
+}
+/* -------------------Menu--------------------------------------- */
+.nav-scrolled{
+        top: 0;
+    }
+.pure-menu-fixed {
+    z-index: 999;
+}
+.pure-menu-item {
+    line-height: 28pt;
+    display: block;
+}
+a.pure-menu-link {
+    line-height: 28pt;
+}
+
+.pure-menu-children li a{
+    padding-left: 30px;
+}
+.pure-menu-link{
+    color: #0d72b9;
+}
+ .pure-menu-link:focus, .pure-menu-link:hover, .pure-menu-children{
+    background-color: #f4f4f4;
+}
+
+.custom-wrapper {
+          background-color: #f4f4f4;
+    overflow: hidden;
+          -webkit-font-smoothing: antialiased;
+          height: 2.1em;
+          -webkit-transition: height 0.5s;
+          -moz-transition: height 0.5s;
+          -ms-transition: height 0.5s;
+          transition: height 0.5s;
+        font-weight: bold;
+      }
+.pure-menu-list li a:hover{
+    background-color: #0d72b9;
+    color: white;
+}
+      .custom-wrapper.open {
+          height: 100vh;
+      }
+            
+      .custom-toggle {
+          width: 36px;
+          height: 41px;
+          position: absolute;
+          top: 0;
+          left: 0;
+          display: inline-block;
+          margin: 13px;
+      }
+      
+      .custom-toggle .bar {
+          background-color: black;
+          display: block;
+          width: 20px;
+          height: 2px;
+          border-radius: 100px;
+          position: absolute;
+          top: 18px;
+          right: 7px;
+          -webkit-transition: all 0.5s;
+          -moz-transition: all 0.5s;
+          -ms-transition: all 0.5s;
+          transition: all 0.5s;
+      }
+      
+      .custom-toggle .bar:first-child {
+          -webkit-transform: translateY(-6px);
+          -moz-transform: translateY(-6px);
+          -ms-transform: translateY(-6px);
+          transform: translateY(-6px);
+      }
+      
+      .custom-toggle.x .bar {
+          -webkit-transform: rotate(45deg);
+          -moz-transform: rotate(45deg);
+          -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+      }
+      
+      .custom-toggle.x .bar:first-child {
+          -webkit-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+      }
+      
+    .custom-menu-3 {
+       text-align: left;
+    }
+    .pull-right{
+        text-align: right;
+    }
+
+    
+    img.logo-img {
+        width: 104px;
+        height: 40px;
+    }
+    .pure-menu-list{
+        display: block;
+    }
+    /* Hide Dropdowns by Default */
+    ul.pure-menu-list ul {
+        display: none;
+        top: 60px; /* the height of the main nav */
+    }
+	
+    .pure-menu-active>.pure-menu-children
+    {
+        position: static;
+    }
+    /* Display Dropdowns on Hover */
+    ul.pure-menu-list li:hover > ul {
+        display:inherit;
+    }
+	
+    /* Fisrt Tier Dropdown */
+    ul.pure-menu-list ul li {
+        width:100%;
+        float:none;
+        display:list-item;
+    }
+.second-text a{
+    text-decoration: none;
+    color: #2293c8;
+}
+.second-text a:hover{
+    text-decoration: none;
+}
+/*--------------- splash-container ----------------------------*/
+a.btn-pay,a.btn-paytwo {
+    background-color: #0d72b9;
+    padding: 4px 26px;
+    border-radius:  36px;
+    color: white;
+    text-decoration:  none;
+    text-align:  center;
+    font-weight: bold;
+}
+a.btn-pay:hover, a.btn-paytwo:hover{
+    text-decoration: none;
+    color: white;
+}
+.splash-content {
+    margin-bottom: 4em;
+}
+.splash-container{
+     z-index:  9;
+    width: 100%;
+    background: rgba(231,56,39,1);
+    background: #f4f4f4;
+    background: linear-gradient(180deg,  13%,#f4f4f4 43%,#f4f4f4 20.4%,#f4f4f4 112%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1e5799', endColorstr='#cecece',GradientType=1 );
+}
+
+.btn-learn, .btn-register{
+    color: white;
+    display: inline-block;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 5px 28px;
+    border-radius: 36px;
+    text-align: center;
+}
+.btn-learn:hover, .btn-register:hover{
+    text-decoration: none;
+}
+.btn-learn{
+   background-color: orangered;
+    margin-bottom: 10px;
+    width: 125px;
+    text-align: center;
+    margin-right: 10px;
+}
+.btn-register{
+    border: 1px solid white;
+}
+.content.splash-content {
+    padding-top: 2em;
+    padding-bottom: 4em;
+}
+/*--------------- learn-plan----------------------------*/
+ul.title-course li{
+    display: inline-block;
+    list-style: none;
+    color: #afafae;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    height: 24px;
+}
+
+ul.title-course li:first-child{
+    border-left: none;
+    padding-left: 0;
+}
+ul.title-course{
+    padding-left: 0;
+}
+.btn-trial{
+    background-color: #0d72b9;
+    text-align: center;
+}
+.btn-register-trial{
+    color: #0d72b9;
+    background-color: white;
+    border: 1px solid #0d72b9;
+}
+.splash-content h1 {
+   font-size: 22pt;
+    line-height: 42px;
+    margin-top: 73px;
+}
+.pure-g.box-plan {
+    margin-bottom: 3em;
+    background-color: white;
+  -webkit-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.05);
+}
+
+.img-learn-plan {
+    width: 51%;
+}
+.text-black{
+        color: black;
+    }
+.pure-g.box-plan-two {
+    background-color: #0d72b9;
+    margin-bottom:  3em;
+    -webkit-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
+    -moz-box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
+    box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
+    border: 1px solid #0c6bad;
+}
+.btn-trial-two{
+    color: #0d72b9;
+    background-color: white;
+}
+.btn-register-trial-two{
+    color: white;
+    border: 1px solid white;
+    background-color: #0d72b9;
+}
+ul.title-course.title-course-two li {
+    color: #12c0ea;
+}
+.pure-g.box-plan.box-plan-lastchild {
+    margin-bottom:  0;
+}
+.learn-plan-content h3 {
+    margin-bottom: -18px;
+}
+.learn-plan-content {
+    margin-bottom: 20px;
+}
+
+/*---------------Three pay----------------------------*/
+img.img-pay.pure-img-responsive {
+    width: 130px;
+    height: 93px;
+}
+
+.box-payed{
+    background-color: white;
+    padding: 20px;
+}
+.box-pay h2{
+    color: black;
+}
+p.price {
+    font-size:  30px;
+    font-weight:  bold;
+    color:  #f69333;
+}
+p.price span{
+    font-size:  10pt;
+    font-weight:  normal;
+    color:  black;
+}
+.line-botton{
+    border-bottom: 1px solid #cccccc;
+}
+.text-button{
+    color: #cccccc;
+
+}
+a.btn-paytwo {
+    margin: 35px 0 10px 0;
+    display: inline-block;
+}
+
+/* The container */
+.container {
+    display: inline-flex;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 12px;
+    cursor: pointer;
+    font-size: 17px;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    width: 100%;
+    margin-right: 0;
+    padding-right: 0;
+    margin-left: 50px;
+    color: #ccc;
+    float: right;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 25px;
+    width: 25px;
+    background-color: #eee;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+    background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+    background-color: #2196F3;
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+    content: "";
+    position: absolute;
+    display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+    display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+    left: 9px;
+    top: 5px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/*---------------QA----------------------------*/
+.question{
+    margin: 30px 0;
+}
+.how-container, .vip-speacker {
+    background-color: #f4f4f4;
+     z-index:  8;
+    position:  relative;
+}
+.l-box-lastchild{
+    padding-top: 0;
+    padding-bottom: 0;
+}
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    background-color: transparent;
+    font-size: 20px;
+}
+.accordion.active{
+    color: red;
+    width: 100%;
+}
+.accordion.panel-two.active{
+    color: #0d72b9;
+}
+
+
+
+.panel {
+    padding: 0 18px;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+
+ul.account, ul {
+    list-style: none;
+    padding-left: 2px;
+}
+.account span {
+    font-weight: bold;
+}
+ul.account li{
+    font-weight: 100;
+}
+select#mySelect {
+    width:  100%;
+}
+
+/*---------------Footer----------------------------*/
+.footer{
+    background-color: #0d72b9;
+}
+.footer h4, .text-white{
+    color: white;
+}
+ul.list-footer li, ul.list-footer li a{
+    color: white;
+    list-style: none;
+}
+ul.list-footer li a, ul.list-footer li a:hover{
+    text-decoration: none;
+}
+ul.list-footer{
+    padding-left: 0;
+}
+.img-cancel{
+        display: none;
+    }
+.title-course li span{
+    margin: 0 10px;
+}
+.box-speacker p:last-child{
+    color: #a79e9e;
+}
+/*----------------------------------------- Larger than mobile ------------------------------------*/
+
+p.name-author {
+    margin-bottom: -19px;
+}
+
+
+.back{
+    background-color: #f4f4f4;
+}
+.panel p{
+    text-align: left;
+    margin-top: 2px;
+}
+.back-to-top{
+    width: 40px;
+}
+.g {
+    display:  block;
+}
+
+.g:after {
+    clear: both;
+    content: '';
+    display: table;
+}
+.g-b {
+    box-sizing: border-box;
+    float: left;
+    width: 100%;
+}
+
+/*----------Menu--------------------*/
+    .custom-wrapper{
+        width: 100%;
+        height: 57px;
+        position: fixed;
+        top: 10px;
+        z-index: 10000;
+    }
+    .background-change{
+        background-color: white;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.2);
+        top: 0;
+        transition: background-color .1s ease-in;
+    }
+.change-icon.custom-toggle s.bar{
+    background-color: #1f1717;
+}
+.menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link{
+        color:  #0d72b9;
+    }
+
+.menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link:hover{
+        color: white;
+    }
+ .menu-change ul.pure-menu-list ul.pure-menu-children{
+        background-color: white;
+    }
+.pure-menu-active>.pure-menu-link, .pure-menu-link:focus, .pure-menu-link:hover{
+    background-color: transparent;
+}
+img.img-banner.pure-img-responsive.img-header-one,img.img-banner.pure-img-responsive.img-header-two{
+    display: none;
+}
+.trainform{
+    height: 200px;
+    background-color:  #0d72b9;
+    position: absolute;
+}
+.choice-path h1,.choice-path p
+{
+    color: black;
+}
+img.img-banner.pure-img-responsive {
+    width: 200px;
+}
+.img-banner-position{
+     position: relative;
+}
+img.pure-img-responsive.logo-footer {
+    display:  none;
+}
+ul.list-footer li {
+    line-height: 24px;
+    margin-bottom: 15px;
+}
+.content-path p {
+        line-height: 18pt;
+    }
+
+/* --------------popup ----------------*/
+.overlay {
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: rgba(0, 0, 0, 0.7);
+  transition: opacity 500ms;
+  visibility: hidden;
+  opacity: 0;
+}
+.overlay:target {
+  visibility: visible;
+  opacity: 1;
+}
+.popup {
+  margin: 70px auto;
+  padding: 20px;
+  background: #f4f4f4;;
+  border-radius: 5px;
+  width: 94%;
+  position: relative;
+  transition: all 2s ease-in-out;
+}
+.popup .close {
+  position: absolute;
+  top: 2px;
+  right: 10px;
+  transition: all 200ms;
+  font-size: 30px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #333;
+}
+.popup .content-popup {
+ max-height: 30%;
+  overflow: scroll;
+  height: 540px;
+}
+
+/* -----------------------------------------Larger than mobile -----------------------------------------*/
+@media (min-width: 400px) {
+    img.pure-img-responsive.logo-footer {
+        width: 54%;
+    }
+}
+
+/*----------------------------------------- Larger than phablet----------------------------------------- */
+@media (min-width: 550px) {
+   
+/*--------------- splash-container ----------------------------*/
+      img.img-banner{
+        width: 60%;
+    }
+   
+    
+}
+
+
+/* -----------------------------------------Larger than tablet -----------------------------------------*/
+@media (min-width: 750px) {
+    .container{
+        width: -webkit-fill-available;
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .choice-path h1{
+        margin-top: -110px;;
+    }
+    img.pure-img-responsive.logo-footer {
+        display:  inherit;
+        width: 150px;
+    }
+    .img-banner-position{
+        top: 95px;
+    }
+    .choice-path h1,.choice-path p
+    {
+        color: white;
+    }
+    .content-path {
+        height: 291px;
+    }
+    .box-footer{
+        height: 464px;
+    }
+     img.img-banner.pure-img-responsive.img-header-two {
+        width: 137px;
+        display: block;
+        opacity: 0.1;
+        margin-left: 220px;
+        margin-top: -42px;
+    }
+    img.img-banner.pure-img-responsive.img-header-one {
+        opacity: 0.1;
+        width: 137px;
+        display: block;
+        margin-left: 204px;
+        margin-top: -249px;
+    }
+    
+    .img-vuong {
+        position: absolute;
+        right: 35px;
+        top: 205px;
+    }
+    h2.color-white{
+        font-size: 30pt;
+    } 
+   .trainform{
+      transform: rotate(332deg) scale(1.5) skew(-14deg) translate(-32px);
+      -webkit-transform: rotate(340deg) scale(2.5) skew(0deg) translate(-36px);
+      -moz-transform: rotate(329deg) scale(1.5) skew(-14deg) translate(-32px);
+      -o-transform: rotate(329deg) scale(1.5) skew(-14deg) translate(-32px);
+      -ms-transform: rotate(329deg) scale(1.5) skew(-14deg) translate(-32px);
+      top: 140px;
+      height: 246px;
+      z-index: 0;
+      position: inherit;
+      background-color: #0d72b9;
+      position:  relative;
+    }
+/* End of Your Generated css 
+    /* ------------------menu change color -------------------*/
+     .menu-change ul.pure-menu-list ul.pure-menu-children{
+         -webkit-box-shadow: 2px 11px 18px 2px rgba(0, 0, 0, 0.08);
+         -moz-box-shadow: 2px 11px 18px 2px rgba(0,0,0,0.24);
+         box-shadow: 2px 16px 18px 2px rgba(0,0,0,0.24);
+    }
+    .pure-menu-list {
+        margin-right: 30px;
+    }
+    .pure-menu-has-children:hover, .pure-menu-has-children:hover > .pure-menu-link{
+        background-color: #fff;
+        color: #0d72b9
+    }
+    .pure-menu-list li a:hover {
+        background-color: #fff;
+        color: #0d72b9;
+    }
+    .menu-change ul.pure-menu-list li a:hover {
+        background-color: #efefef;
+        color: #0d72b9;
+    }
+    .pure-menu-has-children li.pure-menu-item a:hover {
+        background-color: #efefef;
+    }
+    .menu-change ul.pure-menu-list li.pure-menu-item a.pure-menu-link:hover {
+        color: #0d72b9;
+    }
+   ul.pure-menu-list ul.pure-menu-children{
+        background-color: white;
+    }
+     ul.pure-menu-list ul.pure-menu-children li a{
+       color: #0d72b9;
+    }
+    
+    
+    li.pure-menu-active a.pure-menu-link{
+        color: white;
+    }
+    
+    .pure-menu-active ul.pure-menu-children li a{
+        text-align: left;
+    }
+    .pure-menu-active>.pure-menu-children
+    {
+        position: absolute;
+    }
+   .pure-g.box-plan {
+    margin-left: 90px;
+       margin-right: 90px;
+   }
+
+.pure-g.box-plan-two {
+      margin-left: 90px;
+       margin-right: 90px;
+}
+
+    .custom-wrapper {
+    overflow: inherit;
+      }
+   
+   
+  
+    
+    ul.pure-menu-list li:hover > ul{
+        display: block;
+        text-align: left !important;
+    }
+    .g.g--l--reverse {
+    display:  flex;
+        flex-direction: row-reverse;
+    }
+    .g-b {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+    }
+/*----------Menu--------------------*/
+    .how-container, .vip-speacker {
+        padding-top: 46px;
+        padding-bottom: 60px;
+    }
+     .custom-toggle {
+        display: none;
+    }
+    
+    a.pure-menu-link {
+        line-height: 38px;
+    }
+    .custom-wrapper {
+          height: 3.3em;
+      }
+    .btn-learn, .btn-register{
+        border-radius: 36px;
+        margin-right: 10px;
+        width: 130px;
+    }
+
+    /*----------splat-container--------------------*/
+    .splash-container{
+       
+    }
+    
+    .content.splash-content {
+        padding-top: 7em;
+        overflow: hidden;
+    }
+    .splash-content h1 {
+        line-height: 42px;
+        font-size: 42px;
+    }
+    .margin-left-content{
+        margin-left: -50px;
+    }
+     /*----------plan learning--------------------*/
+   .img-cancel{
+        width: 7%;
+    }
+    
+    .logo-footer{
+        width: 100%;
+        margin-top: 4em;
+    }
+    .logo-footer{
+        width: 80%;
+    }
+ .pure-g.box-how-learn {
+   padding: 0px 90px 0 90px;
+     margin-bottom: 4em;
+    }
+}
+
+/*----------------------------------------- Larger than desktop -----------------------------------------*/
+@media (min-width: 1000px) {
+     .container{
+        width: auto;
+    }
+    .btn-learn, .btn-register{
+        width: 150px;
+    }
+    img.img-banner.pure-img-responsive{
+        width: 258px;
+    }
+    img.img-banner.pure-img-responsive.img-header-two {
+        width: 173px;
+        display: block;
+        opacity: 0.1;
+        margin-left: 196px;
+        margin-top: 3px;
+    }
+    img.img-banner.pure-img-responsive.img-header-one {
+        opacity: 0.1;
+        width: 180px;
+        display: block;
+        margin-left: 159px;
+        margin-top: -327px;
+    }
+     .box-second{
+        padding-bottom: 40px;
+    }
+    .line-left{
+        border-left: 1px solid #cccccc;
+    }
+     .logo-footer{
+        width: 70%;
+    }
+  .img-cancel{
+        display: inline;
+    }
+
+}
+
+/*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
+@media (min-width: 1200px) {
+    .content-path {
+        height: auto;
+    }
+    .content {
+        padding: 0 100px;
+    }
+    
+    
+/*--------------- splash-container ----------------------------*/
+    img.img-banner.pure-img-responsive{
+        width: 50%;
+    }
+    .img-learn-plan{
+        width: 37%;
+    }
+    .pure-img-responsive {
+        max-width: 100%;
+    }
+    
+    img.pure-img-responsive.logo-footer {
+        width: 69%;
+    }
+    .pure-g.box-plan.box-first {
+        margin-top: 60px;
+    }
+}
+@media (min-width: 1300px) {
+     .img-learn-plan{
+        width: 37%;
+    }
+    .pure-g.box-plan.box-first {
+        margin-top: 40px;
+    }
+}
+@media (min-width: 1500px) {
+     .img-learn-plan{
+        width: 29%;
+    }
+    .learn-plan-content p {
+        width: 75%;
+    }
+}
