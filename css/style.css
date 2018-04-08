@@ -1,12 +1,12 @@
 *{
     box-sizing: border-box;
-    font-family: 'Nunito',sans-serif;
+font-family: 'Nunito', sans-serif;
 }
 body {
     line-height: 28px;
     font-size: 17px;
     font-weight: 300;
-    background-color:  #0d72b9;
+    background-color:  #f4f4f4;
 }
 .hidden{
     display: none;
@@ -183,6 +183,7 @@ a.pure-menu-link {
         display:list-item;
     }
 /*--------------- splash-container ----------------------------*/
+<<<<<<< HEAD
 #decorator{
     width: 100%;
     position: absolute;
@@ -197,7 +198,14 @@ a.pure-menu-link {
     -ms-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
 }
 
+=======
+.splash-content p{
+    line-height: 20pt;
+}
+>>>>>>> 60bde937c95bbcf741c38467dde1758346b14828
 .splash-content h1{
+       line-height: 42px;
+    font-size: 42px;
     color: white;
 }
 .splash-container{
@@ -213,16 +221,17 @@ a.pure-menu-link {
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
-    padding: 5px 28px;
+    padding: 3px 20px;
     border-radius: 36px;
+     width: 130px;
+    text-align: center;
 }
 .btn-learn:hover, .btn-register:hover{
     text-decoration: none;
 }
 .btn-learn{
-   background-color: orangered;
+   background-color: #f15a24;
     margin-bottom: 10px;
-    width: 125px;
     text-align: center;
     margin-right: 10px;
 }
@@ -239,6 +248,7 @@ a.pure-menu-link {
     position: relative;
     z-index: 101;
 }
+
 /*--------------- learn-plan----------------------------*/
 ul.title-course li{
     display: inline-block;
@@ -293,6 +303,7 @@ ul.title-course{
     box-shadow: 10px 10px 75px 5px rgba(0,0,0,0.2);
     border: 1px solid #0c6bad;
 }
+
 .btn-trial-two{
     color: #0d72b9;
     background-color: white;
@@ -312,7 +323,7 @@ ul.title-course.title-course-two li {
     margin-bottom: -18px;
 }
 .learn-plan-content {
-    margin-bottom: 20px;
+       margin-bottom: 5px;
 }
 /*---------------How to learn----------------------------*/
 .how-container, .vip-speacker {
@@ -469,8 +480,12 @@ p.name-author {
  img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
         display: none;
     }
+img.pure-img-responsive.logo-footer {
+       display: none;
+}
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
+<<<<<<< HEAD
     img.pure-img-responsive.logo-footer {
         width: 100%;
         margin-top: 7em;
@@ -482,6 +497,9 @@ p.name-author {
         -o-transform: rotate(62deg) scale(2) skew(3deg) translate(-135%,0);
         -ms-transform: rotate(62deg) scale(2) skew(3deg) translate(-135%,0);
     }
+=======
+    
+>>>>>>> 60bde937c95bbcf741c38467dde1758346b14828
 }
 
 /*----------------------------------------- Larger than phablet----------------------------------------- */
@@ -496,7 +514,6 @@ p.name-author {
         -ms-transform: rotate(62deg) scale(2) skew(3deg) translate(-105%,0);
     }
       img.img-banner{
-        width: 60%;
     }
    
    
@@ -505,16 +522,62 @@ p.name-author {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    .learn-plan-content {
+       margin-bottom: 5px;
+        margin-left: 33px;
+    }
+     .custom-menu-3 {
+       text-align: right;
+    }
     /* ------------------menu change color -------------------*/
+<<<<<<< HEAD
     #decorator {
         transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
         -webkit-transform: rotate(62deg) scale(2) skew(3deg) translate(-56%,0);
         -moz-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
         -o-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
         -ms-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+=======
+    .menu-change ul.pure-menu-list ul.pure-menu-children{
+         -webkit-box-shadow: 2px 11px 18px 2px rgba(0, 0, 0, 0.08);
+         -moz-box-shadow: 2px 11px 18px 2px rgba(0,0,0,0.24);
+         box-shadow: 2px 16px 18px 2px rgba(0,0,0,0.24);
+    }
+    a.icon-drop {
+        font-size: 30px;
+        font-weight:  bold;
+        position: relative;
+        top: -173px;
+        color: white;
+    }
+    .learn-plan-content {
+       margin-bottom: 5px;
+        margin-left: 33px;
+    }
+    .learn-plan-content {
+        margin-bottom: 5px;
+        margin-left: 33px;
+    }
+    .splash-content p {
+        line-height: 20pt;
+        margin-bottom: 10px;
+    }
+    .learn-plan-content h3 {
+        margin-bottom: -18px;
+        margin-top: 12px;
+    }
+    ul.title-course {
+        padding-left: 0;
+        margin-top: 13px;
+        margin-bottom: -10px;
+>>>>>>> 60bde937c95bbcf741c38467dde1758346b14828
     }
     .splash-content h1{
         margin-top: 0;
+    }
+    .splash-content {
+        position:  relative;
+        top: 1em;
     }
     .pure-menu-has-children:hover, .pure-menu-has-children:hover > .pure-menu-link{
         background-color: #fff;
@@ -593,19 +656,26 @@ p.name-author {
     }
    
     a.pure-menu-link {
-        line-height: 38px;
+        line-height: 49px;
     }
     .custom-wrapper {
-          height: 3.3em;
+          height: 4em;
       }
     .btn-learn, .btn-register{
         border-radius: 36px;
         margin-right: 10px;
+        width: auto;
     }
 
     /*----------splat-container--------------------*/
     .splash-container{
+<<<<<<< HEAD
         background: #f4f4f4;
+=======
+          background: linear-gradient(150deg, #0d72b9 13%,#0d72b9 43%,#f4f4f4 20.4%,#f4f4f4 112%);
+        position:  relative;
+        top: -42px;
+>>>>>>> 60bde937c95bbcf741c38467dde1758346b14828
     }
     .content.splash-content {
         padding-top: 7em;
@@ -614,6 +684,7 @@ p.name-author {
     .splash-content h1 {
         line-height: 42px;
         font-size: 42px;
+        margin-bottom: -6px;
     }
     .margin-left-content{
         margin-left: -50px;
@@ -626,13 +697,12 @@ p.name-author {
     .panel p {
     padding-left: 50px;
 }
-    .logo-footer{
-        width: 100%;
+    img.pure-img-responsive.logo-footer{
+         display: inherit;
+        width: 80%;
         margin-top: 4em;
     }
-    .logo-footer{
-        width: 80%;
-    }
+   
     .pure-g.box-how-learn {
        padding: 0px 50px 0 50px;
          margin-bottom: 4em;
@@ -645,7 +715,7 @@ p.name-author {
         display:  block;
         opacity: 0.1;
         margin-left: 196px;
-        margin-top: -68px;
+        margin-top: 3px;
     }
     img.img-banner.pure-img-responsive.img-header-one {
         opacity: 0.1;
@@ -654,10 +724,21 @@ p.name-author {
         margin-left: 159px;
         margin-top: -327px;
     }
+     .btn-learn, .btn-register{
+        padding: 3px 30px;
+    }
 }
 
 /*----------------------------------------- Larger than desktop -----------------------------------------*/
 @media (min-width: 1000px) {
+     .splash-content {
+        position:  relative;
+        top: 1em;
+        padding-right:  3em;
+    }
+    .btn-learn, .btn-register{
+        padding: 3px 40px;
+    }
     .content.splash-content {
         padding-top: 12em;
         
@@ -688,7 +769,10 @@ p.name-author {
 
 /*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
 @media (min-width: 1200px) {
-   
+   img.logo-img {
+        margin-left: 64px;
+       margin-top: 5px;
+    }
     .content {
         padding: 0 100px;
     }
@@ -696,7 +780,9 @@ p.name-author {
     
 /*--------------- splash-container ----------------------------*/
     img.img-banner{
-        width: 50%;
+       width: 65%;
+        top: -69px;
+        position: relative;
     }
     .img-learn-plan{
         width: 37%;
@@ -711,13 +797,17 @@ p.name-author {
     .pure-g.box-plan.box-first {
         margin-top: 90px;
     }
+    .pure-g.box-plan.box-first, .pure-g.box-plan-two{
+        margin-bottom: 20px;
+    }
 }
 @media (min-width: 1300px) {
      .img-learn-plan{
-        width: 37%;
+       width: 53%;
+        margin-top: 24px;
     }
     .pure-g.box-plan.box-first {
-        margin-top: 160px;
+        margin-top: 84px;
     }
 }
 @media (min-width: 1500px) {
