@@ -179,7 +179,8 @@
                              </div>
                             
                              
-                             <a href="#popup" class="btn-paytwo">Thanh toán</a>
+                             <a href="#popup" class="btn-paytwo" onclick="PayOne(this)" value="basic">Thanh toán</a>
+                             
                           </div>
                          
                       </div>
@@ -197,7 +198,7 @@
                              <p>Trao đổi trực tiếp với Mentor</p>
                          </div>   
                              
-                             <a href="#popup" class="btn-paytwo">Thanh toán</a>
+                             <a href="#popup" class="btn-paytwo" onclick="PayTwo()">Thanh toán</a>
                           </div>
                       </div>
                 <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24 is-center ">
@@ -213,7 +214,7 @@
                                  <p>CV trực tuyến</p>
                                  <p>Đảm bảo hoàn tiền 100%</p>
                              </div> 
-                             <a href="#popup" class="btn-paytwo">Thanh toán</a>
+                             <a href="#popup" class="btn-paytwo" onclick="PayThree()">Thanh toán</a>
                           </div>
                       </div>
                 
@@ -237,13 +238,13 @@
                                                 <h3>Thông tin đăng ký</h3>
 
                                                  <p class="first-text">Khóa học đã đăng ký</p>
-                                                 <p class="second-text">Design building <br>
+                                                 <p class="second-text" id="name-course">Design building <br>
                                                  </p>
                                                  <p class="first-text">Gói dịch vụ</p>
-                                                 <p class="second-text">Vip</p>
+                                                 <p class="second-text" id="name-option">Vip</p>
 
                                                  <p class="first-text">Tổng thành tiền</p>
-                                                 <p class="second-text">13.000.000 VNĐ</p>
+                                                 <p class="second-text" id="sum-price">13.000.000 VNĐ</p>
                                                  <p class="first-text">Ngày đăng ký</p>
                                                  <p class="second-text">04/04/2018</p>
                                              </div>
@@ -403,12 +404,7 @@
       </footer>    
       
       
-      
-           <!-------------------------pay--------------------------------->
-      <script>
-            
-      </script>
-      
+ 
            <!-------------------------Select course-------------------------------------->
       <script>
           
@@ -439,14 +435,17 @@
           
            var select = getCookie("route");
           if(select=="designBuiding"){
+              document.cookie="selectone=designBuiding";
               document.getElementById("action-choice1").classList.remove("hidden");
               document.getElementById("designBuiding").innerHTML="Bỏ chọn";
           }
           else if(select=="frontEnd"){
+              document.cookie="selecttwo=frontEnd";
                  document.getElementById("action-choice2").classList.remove("hidden");
                document.getElementById("frontEnd").innerHTML="Bỏ chọn";
           }
           else{
+                document.cookie="selectthree=backEnd";
                  document.getElementById("action-choice3").classList.remove("hidden");
                document.getElementById("backEnd").innerHTML="Bỏ chọn";
           }
@@ -457,7 +456,7 @@
                 var valueSelect1 = evt.getAttribute("value");
                 var check = getCookie("selectone");
                 var checksecond = getCookie("route");
-              if(check!= "" ){
+              if(check!= ""){
                   delete_cookie("selectone");
                    document.getElementById("action-choice1").classList.add("hidden");
                    document.getElementById(valueSelect1).innerHTML="Chọn";
@@ -594,6 +593,55 @@
                   document.getElementById("option3").innerHTML = "5";
               }
           }
+          
+          /*--------------------pay----------*/
+          
+        
+          function checkCookieSelect (){
+              
+            var selectPay = getCookie("route");
+            var cookie1 = getCookie("selectone");
+            var cookie2 = getCookie("selecttwo");
+            var cookie3 = getCookie("selectthree");
+         
+             if(cookie1!=""){
+                     document.getElementById("name-course").innerHTML= cookie1 +" ,"+ cookie2 + " ,"+ cookie3;
+                }
+                else if(cookie2!=""){
+                   document.getElementById("name-course").innerHTML= cookie1 +" ,"+ cookie2 + " ,"+ cookie3;
+
+                }
+                else{
+                   document.getElementById("name-course").innerHTML= cookie1 +" ,"+ cookie2 + " ,"+ cookie3;
+                }
+          
+          }
+          
+            function PayOne( evt){
+                    checkCookieSelect();
+                    document.getElementById("name-option").innerHTML="Basic";
+                    var sum = document.getElementById("option1").textContent;
+                    document.getElementById("sum-price").innerHTML= sum + " VNĐ";
+
+                }
+           function PayTwo(){
+                checkCookieSelect();
+                    document.getElementById("name-option").innerHTML="Premium";
+                    var sum = document.getElementById("option2").textContent;
+                    document.getElementById("sum-price").innerHTML= sum + " VNĐ";
+
+                }
+          
+           function PayThree( ){
+                checkCookieSelect();
+                    document.getElementById("name-option").innerHTML="Vip";
+                    var sum = document.getElementById("option3").textContent;
+                    document.getElementById("sum-price").innerHTML= sum + " VNĐ";
+
+                }
+          
+          
+          
           
           window.onload = resultSelect();
           /*

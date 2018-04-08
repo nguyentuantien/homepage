@@ -509,7 +509,8 @@ img.pure-img-responsive.logo-footer {
         background-color: #0d72b9;
         color: white;
         border:  1px solid;
-        line-height: 51px;
+        line-height: 20px;
+        margin-top: 15px;
     }
     .menu-change.menu-change a.pure-menu-link.active-two.menu-register{
         color: white;
@@ -722,7 +723,16 @@ img.pure-img-responsive.logo-footer {
         padding: 3px 30px;
     }
 }
-
+@media (min-width: 751px) {
+    #menu-top{
+        display: none;
+    }
+}
+@media (min-width: 768px) {
+    #menu-top{
+        display: inherit;
+    }
+}
 /*----------------------------------------- Larger than desktop -----------------------------------------*/
 @media (min-width: 1000px) {
     h1#rain-learn{
