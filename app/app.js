@@ -40,7 +40,7 @@ function PaymentCart(){
     
     this.toggleItem = function(key){
         var cached = store.get(key);
-        if(!cached || JSON.parse(cached||'')===false){
+        if(!cached || JSON.parse(cached||'false')===false){
             store.set(key,true);
             return;
         }
@@ -49,7 +49,7 @@ function PaymentCart(){
     
     this.isSelected = function(item){
         var cached = store.get(item.key);
-        if(!cached || JSON.parse(cached||'')===false){
+        if(!cached || JSON.parse(cached||'false')===false){
             return false;
         }
         return true;
@@ -63,7 +63,7 @@ function PaymentCart(){
         var items=[];
         for(var index in PaymentItems){
             var item = PaymentItems[index];
-            if(JSON.parse(store.get(item.key)|| '')===true){
+            if(JSON.parse(store.get(item.key)|| 'false')===true){
                 items.push(item);
             }
         }
