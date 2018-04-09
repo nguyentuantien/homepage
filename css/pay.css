@@ -622,7 +622,7 @@ ul.list-footer li {
   visibility: hidden;
   opacity: 0;
 }
-.overlay:target {
+.billing .overlay {
   visibility: visible;
   opacity: 1;
 }

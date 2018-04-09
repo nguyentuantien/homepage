@@ -167,7 +167,7 @@ function PaymentPage(){
         var rerender = this.render;
         
         document.addEventListener('click',function(evt){
-            
+            evt.preventDefault();
             if(evt.target && evt.target.matches('.btn-register, .select-check')){
               var finder = getParentMatching(evt.target,'learn-plan-content');
                 
@@ -178,8 +178,15 @@ function PaymentPage(){
             }else if(evt.target.matches('.btn-payment')){
                 paymentCart.setCurrentService(evt.target.getAttribute('data-service'));
                 renderOrder();
+                document.body.classList.add('billing');
             }
         });
+        
+        document.querySelector('#popup .close').addEventListener('click',function(evt){
+           document.body.classList.remove('billing');
+            evt.preventDefault();
+        });
+        
     }
 }
 

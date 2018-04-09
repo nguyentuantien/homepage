@@ -260,7 +260,9 @@ a.pure-menu-link.active-two.menu-register:hover{
     position: relative;
     z-index: 101;
 }
-
+.title-header p{
+    text-shadow: 1px 1px 20px #484545;
+}
 /*--------------- learn-plan----------------------------*/
 ul.title-course li{
     display: inline-block;
