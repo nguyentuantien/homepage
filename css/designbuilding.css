@@ -1,0 +1,186 @@
+a.link-web {
+    text-decoration:  none;
+    color: #ff0;
+}
+
+a.btn-register.btn-register-design {
+    background-color: white;
+    color: #0d72b9;
+}
+
+a.start-learn {
+    background-color: #0d72b9;
+    padding: 6px 22px;
+    border-radius:  6px;
+    font-weight:  bold;
+    color:  white;
+    text-decoration:  none;
+    text-align:  center;
+}
+.background-white{
+    background-color: white;
+}
+a.btn-next {
+    color:  #333;
+    text-decoration:  none;
+}
+a.btn-next span {
+    margin-left: 15px;
+    font-size: 30px;
+}
+
+.content.splash-content{
+    padding-bottom: 0;
+}
+.container-design {
+    background-color: #fff;
+    position:  relative;
+    overflow:  hidden;
+    padding-bottom: 9em;
+}
+img.img-banner-design.pure-img-responsive{
+    display: none;
+}
+
+.content.content-design {
+    background-color: #0d72b9;
+}
+.container-design{
+    padding-bottom: 0;
+}
+.text-subject p{
+    color: white;
+}
+.img-content{
+    width: 180px;
+}
+/* -----------------------------------------Larger than mobile -----------------------------------------*/
+@media (min-width: 400px) {
+    
+}
+
+/*----------------------------------------- Larger than phablet----------------------------------------- */
+@media (min-width: 550px) {
+   
+  
+}
+
+
+/* -----------------------------------------Larger than tablet -----------------------------------------*/
+@media (min-width: 750px) {
+    h1#rain-learn{
+        margin-top: 0;
+    }
+    img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
+        display: none;
+    }
+     img.img-banner-design.pure-img-responsive{
+        display: inherit;
+         margin-top: 8em;
+    }
+    .text-subject p{
+        color: black;
+    }
+    .splash-container.container-design{
+           background: linear-gradient(202deg, #0d72b9 13%,#0d72b9 43%,#faf7f7 20.4%,#fcfcfc 112%);
+           position:  relative;
+    }
+    img.img-content.pure-img-responsive {
+        width: 182px;
+    }
+  
+    .content.splash-content.splash-design{
+        padding-top: 4em;
+    }
+ 
+    .content.content-design {
+        background-color: transparent;
+    }
+    #trainform-design{
+        transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+        -webkit-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+        -moz-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+        -o-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+        -ms-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+        width: 100%;
+        position: absolute;
+        height: 500px;
+        background: #0d72b9;
+        top: 16px;
+        z-index: 1;
+        left: 116px;
+    }
+    .content.content-design {
+        z-index:  10;
+        position:  relative;
+        top: 0;
+    }
+    .img-banner-design{
+        width: 250px;
+    }
+    .splash-content {
+        margin-top: 8em;
+    }
+    
+    img.img-banner.pure-img-responsive.img-header-two {
+        width: 173px;
+        display: block;
+        opacity: 0.1;
+        margin-left: 137px;
+        margin-top: 3px;
+        top: -120px;
+        position: relative;
+    }
+    img.img-banner.pure-img-responsive.img-header-one {
+        opacity: 0.1;
+        width: 180px;
+        display: block;
+        margin-left: 159px;
+        margin-top: -385px;
+    }
+}
+
+@media (min-width: 1024px) {
+   img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
+        display: inherit;
+    }
+#trainform-design{
+       top: 3px;
+   left: 100px;
+    }
+     img.img-banner.pure-img-responsive.img-header-two {
+        width: 173px;
+        display: block;
+        opacity: 0.1;
+        margin-left: 264px;
+        margin-top: 3px;
+        top: -120px;
+        position: relative;
+    }
+    img.img-banner.pure-img-responsive.img-header-one {
+        opacity: 0.1;
+        width: 180px;
+        display: block;
+        margin-left: 294px;
+        margin-top: -406px;
+    }
+}
+/*----------------------------------------- Larger than desktop -----------------------------------------*/
+@media (min-width: 1200px) {
+   
+#trainform-design{
+   top: 3px;
+      left: 300px;
+    }
+}
+
+/*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
+@media (min-width: 1200px) {
+   
+}
+@media (min-width: 1300px) {
+  
+}
+@media (min-width: 1500px) {
+  
+}
