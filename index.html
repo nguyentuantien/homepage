@@ -94,7 +94,7 @@
                              </ul>
                              <p class="text-black">Bạn muốn trở thành nhà lập trình nhưng chưa biết bắt đầu từ đâu? Bắt đầu như thế nào? Bạn chưa tự tin về khả năng của mình. CiOne sẽ giúp bạn, đến CiOne bạn sẽ được học theo lộ trình bài bản và được dẫn dắt bởi các chuyên gia lập trình.</p>
                              <a href="#" class="btn-learn btn-trial">Chi tiết</a>
-                              <a href="pay.html" class="btn-register btn-register-trial" onclick="CreateRoute(this)" value="designBuiding">Đăng ký</a>
+                              <a href="pay.html" class="btn-register btn-register-trial" onclick="CreateRoute(this)" value="webbuilder">Đăng ký</a>
                          </div>
                    </div>
               </div>
@@ -113,7 +113,7 @@
                              </ul>
                              <p class="text-white">Bạn muốn trở thành nhà lập trình nhưng chưa biết bắt đầu từ đâu? Bắt đầu như thế nào? Bạn chưa tự tin về khả năng của mình. CiOne sẽ giúp bạn, đến CiOne bạn sẽ được học theo lộ trình bài bản và được dẫn dắt bởi các chuyên gia lập trình.</p>
                              <a href="#" class="btn-learn btn-trial btn-trial-two">Chi tiết</a>
-                              <a href="pay.html" class="btn-register btn-register-trial btn-register-trial-two" onclick="CreateRoute(this)" value="frontEnd">Đăng ký</a>
+                              <a href="pay.html" class="btn-register btn-register-trial btn-register-trial-two" onclick="CreateRoute(this)" value="frontend">Đăng ký</a>
                          </div>
                    </div>
               </div>
@@ -132,7 +132,7 @@
                              </ul>
                              <p class="text-black">Bạn muốn trở thành nhà lập trình nhưng chưa biết bắt đầu từ đâu? Bắt đầu như thế nào? Bạn chưa tự tin về khả năng của mình. CiOne sẽ giúp bạn, đến CiOne bạn sẽ được học theo lộ trình bài bản và được dẫn dắt bởi các chuyên gia lập trình.</p>
                              <a href="#" class="btn-learn btn-trial">Chi tiết</a>
-                              <a href="pay.html" class="btn-register btn-register-trial" onclick="CreateRoute(this)" value="backEnd">Đăng ký</a>
+                              <a href="pay.html" class="btn-register btn-register-trial" onclick="CreateRoute(this)" value="backend">Đăng ký</a>
                          </div>
                    </div>
               </div>
@@ -301,18 +301,13 @@
               </div>
           </div>
       </footer>    
-      
-<<<<<<< HEAD
-=======
-      
        <!-------------------------Cookie----------------------------------->
       <script>
             function CreateRoute(evt){
                 var value = evt.getAttribute("value");
-                document.cookie = 'route=' +value+'; path=/';
+                localStorage.setItem(value,true);
             }
       </script>
->>>>>>> 77dcdfce4e7315eebe2b59f38e8c84a3723906cb
       <script>
             window.onscroll = function() {changeColor()};
 
