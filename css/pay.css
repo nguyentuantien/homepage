@@ -203,7 +203,7 @@ a.pure-menu-link {
     text-decoration: none;
 }
 /*--------------- splash-container ----------------------------*/
-a.btn-pay,a.btn-paytwo {
+a.btn-payment {
     background-color: #0d72b9;
     padding: 4px 26px;
     border-radius:  36px;
@@ -212,7 +212,7 @@ a.btn-pay,a.btn-paytwo {
     text-align:  center;
     font-weight: bold;
 }
-a.btn-pay:hover, a.btn-paytwo:hover{
+a.btn-payment{
     text-decoration: none;
     color: white;
 }
@@ -649,6 +649,9 @@ ul.list-footer li {
  max-height: 30%;
   overflow: scroll;
   height: 540px;
+}
+#name-option{
+    text-transform: capitalize;
 }
 
 /* -----------------------------------------Larger than mobile -----------------------------------------*/

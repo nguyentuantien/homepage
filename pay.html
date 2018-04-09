@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="vi">
-  <head>
+
+<head>
     <meta charset="utf-8">
     <title>CiOne.Vn | Học lập trình web</title>
     <meta http-equiv=X-UA-Compatible content="IE=edge">
@@ -9,935 +10,523 @@
     <!-- Css
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
-    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css"  crossorigin="anonymous">
-     <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
-      <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" type="application/javascript"></script>
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/pure-min.css" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/purecss@1.0.0/build/grids-responsive-min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/zepto/1.2.0/zepto.min.js" type="application/javascript"></script>
     <link href="css/pay.css" rel="stylesheet">
-  </head>
-  <body >
-        <nav id="nav">
-          <!-------------------------Menu---------------------------------------->
-          <div class="custom-wrapper pure-g" id="menu">
-              <h2 class="hidden">CiOne.vn</h2>
-              <div class="pure-u-1 pure-u-md-1-5">
-                  <div class="pure-menu " id="icon">
-                     
-                      <a href="#" class="custom-toggle" id="toggle">
-                          <s class="bar"></s><s class="bar"></s><s class="bar"></s>
-                      </a>
-                       <a href="#" class="pure-menu-heading custom-brand is-center">
-                         <img alt="hình ảnh" src="https://i.imgur.com/RD9dZzv.png" class="logo-img pure-img-responsive" id="logo">
-                      </a>
-                  </div>
-              </div>
-              <div class="pure-u-1 pure-u-md-4-5">
-                  <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform " id="menu-top">
-                      <ul class="pure-menu-list">
-                          <li class="pure-menu-item pure-menu-has-children ">
+</head>
+
+<body>
+    <nav id="nav">
+        <!-------------------------Menu---------------------------------------->
+        <div class="custom-wrapper pure-g" id="menu">
+            <h2 class="hidden">CiOne.vn</h2>
+            <div class="pure-u-1 pure-u-md-1-5">
+                <div class="pure-menu " id="icon">
+
+                    <a href="#" class="custom-toggle" id="toggle">
+                        <s class="bar"></s><s class="bar"></s><s class="bar"></s>
+                    </a>
+                    <a href="#" class="pure-menu-heading custom-brand is-center">
+                        <img alt="hình ảnh" src="https://i.imgur.com/RD9dZzv.png" class="logo-img pure-img-responsive" id="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="pure-u-1 pure-u-md-4-5">
+                <div class="pure-menu pure-menu-horizontal custom-menu-3 custom-can-transform " id="menu-top">
+                    <ul class="pure-menu-list">
+                        <li class="pure-menu-item pure-menu-has-children ">
                             <a href="#" id="menuLink1" class="pure-menu-link">Về CiOne</a>
                             <ul class="pure-menu-children">
                                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">Tầm nhìn & giá trị cốt lõi</a></li>
                                 <li class="pure-menu-item"><a target="_blank" href="https://www.cione.vn/hanhtrinhchinhphucuocmo.html" class="pure-menu-link">Hành trình ước mơ CiOne</a></li>
                                 <li class="pure-menu-item"><a href="#" class="pure-menu-link">CiOne trên VTV</a></li>
-                                 <li class="pure-menu-item"><a target="_blank" href="https://www.cione.vn/nhan-sticker-cione" class="pure-menu-link">Sticker</a></li>
+
+                                <li class="pure-menu-item"><a href="#" class="pure-menu-link">Sticker</a></li>
                             </ul>
                         </li>
-                          <li class="pure-menu-item"><a href="#how-learn" class="pure-menu-link ">Học thế nào?</a></li>
-                          <li class="pure-menu-item"><a href="#rain-learn" class="pure-menu-link">Lộ trình</a></li>
-                          <li class="pure-menu-item"><a target="_blank" href="https://www.cione.vn/thanh-toan-hoc-phi" class="pure-menu-link">Học phí</a></li>
-                      </ul>
-                     <a target="_blank" href="https://www.cione.vn/class/login" class="pure-menu-link active-two menu-register">Học thử</a>
-                  </div>
-              </div>
-          </div>
-       </nav>
-      <!-------------------------Banner header---------------------------------------->
-      <section >
-             <div class="splash-container">
-          <div class="content splash-content">
-            <div class="pure-g box-header-content">
-                      <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2 text-content">
-                          <div class="splash-content">
-                            <h1 id="title-header"> Hướng dẫn đóng<br> học phí</h1>
-                              <p>
-                                 Chọn gói học phí dựa theo nhu cầu của bạn. Rồi thực hiện các bước theo quy trình đăng ký
-                                </p>
-                              <a href="#" class="btn-pay">Đóng học phí</a>
-                          </div>
-                           
-                      </div>
-                     <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2 is-center img-banner-position">
-                            <img src="https://i.imgur.com/1gRqriP.png" class="img-banner pure-img-responsive"  alt="hình ảnh"/>
-                         <div class="img-vuong">
-                             <img src="https://i.imgur.com/ls6hD9a.png" class="img-banner pure-img-responsive img-header-two"  alt="hình ảnh"/>
-                            <img src="https://i.imgur.com/ls6hD9a.png" class="img-banner pure-img-responsive img-header-one"  alt="hình ảnh"/>
-                         </div>
-                        
-                      </div>
-             </div>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link ">Học thế nào?</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Khóa học</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Học phí</a></li>
+                        <li class="pure-menu-item"><a href="#" class="pure-menu-link">Đăng ký </a></li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <!-------------------------Banner header---------------------------------------->
+    <section>
+        <div class="splash-container">
+            <div class="content splash-content">
+                <div class="pure-g box-header-content">
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2 text-content">
+                        <div class="splash-content">
+                            <h1 id="title-header"> Chọn lộ trình<br> và dịch vụ chăm sóc</h1>
+                            <p>
+                                Chọn gói học phí dựa theo nhu cầu của bạn. Rồi thực hiện các bước theo quy trình đăng ký
+                            </p>
+                            <a href="#" class="btn-payment">Đóng học phí</a>
+                        </div>
+
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-1-2 pure-u-lg-1-2 pure-u-xl-1-2 is-center img-banner-position">
+                        <img src="https://i.imgur.com/1gRqriP.png" class="img-banner pure-img-responsive" alt="hình ảnh" />
+                        <div class="img-vuong">
+                            <img src="https://i.imgur.com/ls6hD9a.png" class="img-banner pure-img-responsive img-header-two" alt="hình ảnh" />
+                            <img src="https://i.imgur.com/ls6hD9a.png" class="img-banner pure-img-responsive img-header-one" alt="hình ảnh" />
+                        </div>
+
+                    </div>
+                </div>
+
                 <!-------------------------Plan learning one---------------------------------------->
-              <div class="trainform">
-              
-              </div>
-              <div class="pure-g box-header-content">
-                <div class="l-box pure-u-1 pure-u-md-5-5 pure-u-lg-5-5 pure-u-xl-5-5 is-center choice-path">
-                         <h1>Chọn khóa học</h1>
-                    <p>Bạn muốn trở thành nhà lập trình nhưng chưa biết bắt đầu từ đâu? <br> Bắt đầu như thế nào? Bạn chưa tự tin về khả năng của mình. <br>CiOne sẽ giúp bạn, đến CiOne bạn sẽ được học theo lộ trình bài bản và</p>
-                  </div>
-              </div>
-              <div class="pure-g box-plan box-first box-header-content">
-                <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5 is-center">
-                         <img src="https://i.imgur.com/NIdsoAM.png" class="img-learn-plan pure-img-responsive"  alt="hình ảnh"/>
-                  </div>
-                  <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5 margin-left-content">
-                         <div class="learn-plan-content">
-                              <h3>Design Building</h3>
-                             <ul class="title-course">
+                <div class="trainform">
+
+                </div>
+                <div class="pure-g box-header-content">
+                    <div class="l-box pure-u-1 pure-u-md-5-5 pure-u-lg-5-5 pure-u-xl-5-5 is-center choice-path">
+                        <h1>Chọn lộ trình</h1>
+                        <p>Bạn muốn trở thành nhà lập trình nhưng chưa biết bắt đầu từ đâu?
+                            <br> Bắt đầu như thế nào? Bạn chưa tự tin về khả năng của mình.
+                            <br>CiOne sẽ giúp bạn, đến CiOne bạn sẽ được học theo lộ trình bài bản và</p>
+                    </div>
+                </div>
+                <div class="pure-g box-plan box-first box-header-content">
+                    <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5 is-center">
+                        <img src="https://i.imgur.com/NIdsoAM.png" class="img-learn-plan pure-img-responsive" alt="hình ảnh" />
+                    </div>
+                    <div id="webbuilder" class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5 margin-left-content">
+                        <div class="learn-plan-content" data-key="webbuilder">
+                            <h3>Design Building</h3>
+                            <ul class="title-course">
                                 <li>HTML <span>|</span></li>
-                                 <li>CSS <span>|</span></li>
-                                 <li>Photoshop</li>
-                             </ul>
-                             <label class="container choice-route hidden" id="action-choice1"> Đã chọn
-                                  <input type="checkbox" checked="checked">
-                                  <span class="checkmark"></span>
-                                </label>
-                             <a href="#" class="btn-learn btn-trial">Chi tiết</a>
-                              <button type="button" class="btn-register btn-register-trial"  onclick="selectOne(this)" value="designBuiding" id="designBuiding"> Chọn</button>
-                         </div>
-                   </div>
-              </div>
-               <!-------------------------Plan learning Two---------------------------------------->
-              <div class="pure-g box-plan-two">
-                <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5 is-center">
-                         <img src="https://i.imgur.com/u2bZRRq.png" class="img-learn-plan pure-img-responsive"  alt="hình ảnh"/>
-                  </div>
-                  <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5 margin-left-content">
-                         <div class="learn-plan-content">
-                              <h3 class="text-white">Front End</h3>
-                             <ul class="title-course title-course-two">
+                                <li>CSS <span>|</span></li>
+                                <li>Photoshop</li>
+                            </ul>
+                            <label class="container choice-route hidden select-button" id="action-choice1">
+                                <span>Đã chọn</span>
+                                <input type="checkbox" checked="checked" class="select-check">
+                                <span class="checkmark"></span>
+                            </label>
+                            <a href="#" class="btn-learn btn-trial">Chi tiết</a>
+                            <button type="button" class="btn-register btn-register-trial"> Chọn</button>
+                        </div>
+                    </div>
+                </div>
+                <!-------------------------Plan learning Two---------------------------------------->
+                <div class="pure-g box-plan-two">
+                    <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5 is-center">
+                        <img src="https://i.imgur.com/u2bZRRq.png" class="img-learn-plan pure-img-responsive" alt="hình ảnh" />
+                    </div>
+                    <div id="frontend" class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5 margin-left-content">
+                        <div class="learn-plan-content" data-key="frontend">
+                            <h3 class="text-white">Front End</h3>
+                            <ul class="title-course title-course-two">
                                 <li>JavaScript <span>|</span></li>
-                                 <li>Jquery <span>|</span></li>
-                                 <li>DOM</li>
-                             </ul>
-                                <label class="container choice-route hidden" id="action-choice2"> Đã chọn
-                                  <input type="checkbox" checked="checked">
-                                  <span class="checkmark"></span>
-                                </label>
-                             <a href="#" class="btn-learn btn-trial btn-trial-two">Chi tiết</a>
-                              <button type="button" class="btn-register btn-register-trial btn-register-trial-two" onclick="selectTwo(this)" value="frontEnd" id="frontEnd"> Chọn</button>
-                         </div>
-                   </div>
-              </div>
-              
-               <!-------------------------Plan learning Three---------------------------------------->
-              <div class="pure-g box-plan box-plan-lastchild">
-                <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5 is-center">
-                         <img src="https://i.imgur.com/rVcVUq8.png" class="img-learn-plan pure-img-responsive"  alt="hình ảnh"/>
-                  </div>
-                  <div class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5 margin-left-content">
-                         <div class="learn-plan-content">
-                              <h3>Back End</h3>
-                             <ul class="title-course">
-                               <li>ASp.Net <span>|</span></li>
-                                 <li>Ajax & json</li>
-                             </ul>
-                                <label class="container choice-route hidden" id="action-choice3"> Đã chọn
-                                  <input type="checkbox" checked="checked">
-                                  <span class="checkmark"></span>
-                                </label>
-                             <a href="#" class="btn-learn btn-trial">Chi tiết</a>
-                              
-                             <button type="button" class="btn-register btn-register-trial" onclick="selectThree(this)" value="backEnd" id="backEnd"> Chọn</button>
-                         </div>
-                   </div>
-              </div>
-          </div>
-      </div>
-      </section>
-     
-        <!-------------------------Three pay---------------------------------------->
-      <section>
+                                <li>Jquery <span>|</span></li>
+                                <li>DOM</li>
+                            </ul>
+                            <label class="container choice-route hidden select-button" id="action-choice2">
+                                <span>Đã chọn</span>
+                                <input type="checkbox" checked="checked" class="select-check">
+                                <span class="checkmark"></span>
+                            </label>
+                            <a href="#" class="btn-learn btn-trial btn-trial-two">Chi tiết</a>
+                            <button type="button" class="btn-register btn-register-trial btn-register-trial-two"> Chọn</button>
+                        </div>
+                    </div>
+                </div>
+
+                <!-------------------------Plan learning Three---------------------------------------->
+                <div class="pure-g box-plan box-plan-lastchild">
+                    <div class="l-box pure-u-1 pure-u-md-2-5 pure-u-lg-2-5 pure-u-xl-2-5 is-center">
+                        <img src="https://i.imgur.com/rVcVUq8.png" class="img-learn-plan pure-img-responsive" alt="hình ảnh" />
+                    </div>
+                    <div id="backend" class="l-box pure-u-1 pure-u-md-3-5 pure-u-lg-3-5 pure-u-xl-3-5 margin-left-content">
+                        <div class="learn-plan-content" data-key="backend">
+                            <h3>Back End</h3>
+                            <ul class="title-course">
+                                <li>ASp.Net <span>|</span></li>
+                                <li>Ajax & json</li>
+                            </ul>
+                            <label class="container choice-route hidden select-button" id="action-choice3">
+                                <span>Đã chọn</span>
+                                <input type="checkbox" checked="checked" class="select-check">
+                                <span class="checkmark"></span>
+                            </label>
+                            <a href="#" class="btn-learn btn-trial">Chi tiết</a>
+
+                            <button type="button" class="btn-register btn-register-trial"> Chọn</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-------------------------Three pay---------------------------------------->
+    <section id="payment-panel">
         <div class="content">
             <div class="pure-g">
-                  <div class="l-box pure-u-1 is-center">
-                           <h1>Chọn gói học phí</h1>
-                      <p>Bạn chỉ có thể chọn một gói dịch vụ duy nhất <br> Chọn gói dịch vụ nào click vào nút thanh toán ở gói dịch vụ đó</p>
-                    </div>
-                 <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24 is-center">
-                         <div class="box-pay box-payed">
-                             <h2>Basic</h2>
-                             <p class="price" id="option1">2.99 <span>Triệu đồng</span></p>
-                                <img src="https://i.imgur.com/1L2b2SB.png" class="img-pay pure-img-responsive"  alt="hình ảnh"/>
-                           
-                             <div class="content-path">
-                                <p>Học theo lộ trình</p>
-                                 <p>Mentor Giải đáp trực tiếp 24/7</p>
-                                 <p>Giải đáp trên trang melaptrinh.com</p>
-                                 <p>Đánh giá và nhận xét đồ án qua email</p>
-                                 <p>Tham gia Meetup</p>
-                             </div>
-                            
-                             
-                             <a href="#popup" class="btn-paytwo" onclick="PayOne(this)" value="basic">Thanh toán</a>
-                             
-                          </div>
-                         
-                      </div>
+                <div class="l-box pure-u-1 is-center">
+                    <h1>Chọn gói học phí</h1>
+                    <p>Bạn chỉ có thể chọn một gói dịch vụ duy nhất
+                        <br> Chọn gói dịch vụ nào click vào nút thanh toán ở gói dịch vụ đó</p>
+                </div>
                 <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24 is-center">
-                         <div class="box-pay box-payed">
-                             <h2>Premium</h2>
-                             <p class="price" id="option2">6.99 <span>Triệu đồng</span></p>
-                                <img src="https://i.imgur.com/0vrjhPD.png" class="img-pay pure-img-responsive"  alt="hình ảnh"/>
-                           
+                    <div class="box-pay box-payed">
+                        <h2>Basic</h2>
+                        <p class="price" id="basic"><strong>2.99</strong> <span>Triệu đồng</span></p>
+                        <img src="https://i.imgur.com/1L2b2SB.png" class="img-pay pure-img-responsive" alt="hình ảnh" />
+
+                        <div class="content-path">
+                            <p>Học theo lộ trình</p>
+                            <p>Mentor Giải đáp trực tiếp 24/7</p>
+                            <p>Giải đáp trên trang melaptrinh.com</p>
+                            <p>Đánh giá và nhận xét đồ án qua email</p>
+                            <p>Tham gia Meetup</p>
+                        </div>
+
+
+                        <a href="#popup" class="btn-payment" data-service="basic">Thanh toán</a>
+
+                    </div>
+
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24 is-center">
+                    <div class="box-pay box-payed">
+                        <h2>Premium</h2>
+                        <p class="price" id="premium"><strong>2.99</strong> <span>Triệu đồng</span></p>
+                        <img src="https://i.imgur.com/0vrjhPD.png" class="img-pay pure-img-responsive" alt="hình ảnh" />
+
+                        <div class="content-path">
+                            <p>Gồm gói strongasic</p>
+                            <p>Lập bản kế hoạc học tập</p>
+                            <p>Health check 2 lần/ tuần</p>
+                            <p>CV trực tuyến</p>
+                            <p>Trao đổi trực tiếp với Mentor</p>
+                        </div>
+
+                        <a href="#popup" class="btn-payment" data-service="premium">Thanh toán</a>
+                    </div>
+                </div>
+                <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24 is-center ">
+                    <div class="box-pay box-payed">
+                        <h2>Vip</h2>
+                        <p class="price" id="vip"><strong>2.99</strong> <span>Triệu đồng</span></p>
+                        <img src="https://i.imgur.com/fpUd8KU.png" class="img-pay pure-img-responsive" alt="hình ảnh" />
+
                         <div class="content-path">
                             <p>Gồm gói Basic</p>
-                             <p>Lập bản kế hoạc học tập</p>
-                             <p>Health check 2 lần/ tuần</p>
-                             <p>CV trực tuyến</p>
-                             <p>Trao đổi trực tiếp với Mentor</p>
-                         </div>   
-                             
-                             <a href="#popup" class="btn-paytwo" onclick="PayTwo()">Thanh toán</a>
-                          </div>
-                      </div>
-                <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24 is-center ">
-                         <div class="box-pay box-payed">
-                             <h2>Vip</h2>
-                             <p class="price" id="option3">7.99 <span>Triệu đồng</span></p>
-                                <img src="https://i.imgur.com/fpUd8KU.png" class="img-pay pure-img-responsive"  alt="hình ảnh"/>
-                           
-                             <div class="content-path"> 
-                                <p>Gồm gói Basic</p>
-                                 <p>Lập bản kế hoạch học tập</p>
-                                 <p>Health check</p>
-                                 <p>CV trực tuyến</p>
-                                 <p>Đảm bảo hoàn tiền 100%</p>
-                             </div> 
-                             <a href="#popup" class="btn-paytwo" onclick="PayThree()">Thanh toán</a>
-                          </div>
-                      </div>
-                
+                            <p>Lập bản kế hoạch học tập</p>
+                            <p>Health check</p>
+                            <p>CV trực tuyến</p>
+                            <p>Đảm bảo hoàn tiền 100%</p>
+                        </div>
+                        <a href="#popup" class="btn-payment" data-service="vip">Thanh toán</a>
+                    </div>
+                </div>
+
             </div>
-          </div>
-      </section>
-      
-      <!-- popup-->
-            <div id="popup" class="overlay">
-                <div class="popup">
-                         <a class="close" href="#">&times;</a>
-                         <div class="content-popup">
+        </div>
+    </section>
 
-                                    <div class="pure-g">
-                                          <div class="l-box pure-u-1 is-center">
-                                                   <h1>Thanh toán học phí</h1>
-                                              <p>Kiểm tra lại thông tin đăng ký trước khi thanh toán</p>
-                                            </div>
-                                         <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24">
-                                             <div class="box-footer">
-                                                <h3>Thông tin đăng ký</h3>
+    <!-- popup-->
+    <div id="popup" class="overlay">
+        <div class="popup">
+            <a class="close" href="#">&times;</a>
+            <div class="content-popup">
 
-                                                 <p class="first-text">Khóa học đã đăng ký</p>
-                                                 <p class="second-text" id="name-course">Design building <br>
-                                                 </p>
-                                                 <p class="first-text">Gói dịch vụ</p>
-                                                 <p class="second-text" id="name-option">Vip</p>
+                <div class="pure-g">
+                    <div class="l-box pure-u-1 is-center">
+                        <h1>Thanh toán học phí</h1>
+                        <p>Kiểm tra lại thông tin đăng ký trước khi thanh toán</p>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24">
+                        <div class="box-footer">
+                            <h3>Thông tin đăng ký</h3>
 
-                                                 <p class="first-text">Tổng thành tiền</p>
-                                                 <p class="second-text" id="sum-price">13.000.000 VNĐ</p>
-                                                 <p class="first-text">Ngày đăng ký</p>
-                                                 <p class="second-text">04/04/2018</p>
-                                             </div>
-                                        </div>
-                                        <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24">
-                                             <div class="box-footer box-second">
-                                                <h3>Chuyển khoản</h3>
+                            <p class="first-text">Lộ trình đã đăng ký</p>
+                            <p class="second-text" id="name-course">
+                                <br>
+                            </p>
+                            <p class="first-text">Dịch vụ chăm sóc</p>
+                            <p class="second-text" id="name-option"></p>
 
-                                               <div class="box-detail">
-                                                    <div class="form-group pure-form pure-form-stacked">
-                                                        <label>Chọn ngân hàng</label>
-                                                        <select class="form-control" id="mySelect" onchange="checkSelect()">
+                            <p class="first-text">Tổng thành tiền</p>
+                            <p class="second-text" id="sum-price"></p>
+                            <p class="first-text">Ngày đăng ký</p>
+                            <p class="second-text" id="reg-date"></p>
+                        </div>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24">
+                        <div class="box-footer box-second">
+                            <h3>Chuyển khoản</h3>
 
-                                                            <option value="vietcombank" >Vietcombank</option>
-                                                            <option value="acb">ACB Bank</option>
-                                                            <option value="vietin">Vietin Bank</option>
-                                                            <option value="sacom">Sacombank</option>
-                                                            <option value="bidv">BIDV Bank</option>
-                                                            <option value="agri">Agribank Bank</option>
-                                                            <option value="tech">Techcom Bank</option>
-                                                          </select>
-                                                     </div>
-                                                    <ul class="account" >
-                                                        <li class="number-account"> Số tài khoản: <span class="number-account">044 100 377 8455</span> </li>
-                                                        <li> Chủ tài khoản:<span> Phó Hải Đăng</span></li>
-                                                         <li class="detail-location">Chi nhánh: <span class="location">Cộng Hoà, Tân Bình, HCM</span> </li>
-                                                         <li>Nội dung chuyển khoản: <span>Số điện thoại của bạn</span></li>
-                                                     </ul>
+                            <div class="box-detail">
+                                <div class="form-group pure-form pure-form-stacked">
+                                    <label>Chọn ngân hàng</label>
+                                    <select class="form-control" id="mySelect" onchange="selectBank()">
+                                        <option value="vietcombank">Vietcombank</option>
+                                        <option value="acb">ACB</option>
+                                        <option value="vietin">Vietinbank</option>
+                                        <option value="sacom">Sacombank</option>
+                                        <option value="bidv">BIDV</option>
+                                        <option value="agri">Agribank</option>
+                                        <option value="tech">Techcombank</option>
+                                    </select>
+                                </div>
+                                <ul class="account">
+                                    <li class="number-account"> Số tài khoản: <span id="bankacc" class="number-account"></span> </li>
+                                    <li> Chủ tài khoản: <span id="bankown"></span></li>
+                                    <li class="detail-location">Chi nhánh: <span class="location" id="bankbranch"></span> </li>
+                                    <li>Nội dung chuyển khoản: [<span id="name-course-code"></span>]<span>-[Số điện thoại]</span></li>
+                                </ul>
 
 
-                                                 </div>
-                                             </div>
-                                        </div>
-                                        <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24">
-                                             <div class="box-footer">
-                                                <h3>Liên hệ</h3>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-8-24 pure-u-lg-8-24 pure-u-xl-8-24">
+                        <div class="box-footer">
+                            <h3>Liên hệ</h3>
 
-                                                 <p class="first-text">Email</p>
-                                                 <p class="second-text"> cionecare@cione.vn
-                                                 </p>
-                                                 <p class="first-text">Skype</p>
-                                                 <p class="second-text">cionecare</p>
+                            <p class="first-text">Email</p>
+                            <p class="second-text"> cionecare@cione.vn
+                            </p>
+                            <p class="first-text">Skype</p>
+                            <p class="second-text">cionecare</p>
 
-                                                 <p class="first-text">Fanpage</p>
-                                                 <p class="second-text"><a href="https://www.facebook.com/cione.vn/" target="_blank">fb/cione.vn</a></p>
-                                                  <p class="first-text">Hotline</p>
-                                                 <p class="second-text">0982 360 370</p>
-                                             </div>
-                                        </div>
-                                   </div>
-                               
-                       </div>
-                   </div>
-              </div>
-      
-     <section>
+                            <p class="first-text">Fanpage</p>
+                            <p class="second-text"><a href="https://www.facebook.com/cione.vn/" target="_blank">fb/cione.vn</a></p>
+                            <p class="first-text">Hotline</p>
+                            <p class="second-text">0982 360 370</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <section>
         <div class="content question">
             <div class="pure-g">
-                  <div class="l-box pure-u-1 is-center">
-                        <h1>Câu hỏi thường gặp</h1>
-                    </div>
-                 <div class="l-box l-box-lastchild pure-u-1 pure-u-md-12-24 pure-u-lg-12-24 pure-u-xl-12-24 is-center">
-                     <button class="accordion panel-two"><strong>Tôi phải mất bao lâu để đạt mục tiêu thành nhà lập trình web?</strong> </button>
-                            <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.commodo consequat.
-                                
-                                </p>
-                            </div>
-                      
-
-                            <button class="accordion panel-two"> <strong>Tôi nên chọn "học tự do" hay "học theo lộ trình"?</strong> </button>
-                            <div class="panel ">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-
-                            <button class="accordion panel-two"> <strong>Tôi có được download video và tài liệu, mã nguồn khi tôi đã học?</strong> </button>
-                            <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                       
-                            <button class="accordion panel-two"> <strong>Tại sao tôi không được sử dụng dịch vụ trên CiOne.vn trọn đời trong 1 lần đóng phí?</strong> </button>
-                            <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                        
+                <div class="l-box pure-u-1 is-center">
+                    <h1>Câu hỏi thường gặp</h1>
                 </div>
                 <div class="l-box l-box-lastchild pure-u-1 pure-u-md-12-24 pure-u-lg-12-24 pure-u-xl-12-24 is-center">
-                     <button class="accordion panel-two"><strong>Dịch vụ hỗ trợ chuyên môn 24/7 là gì?</strong> </button>
-                            <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.commodo consequat.
-                                
-                                </p>
-                            </div>
-                      
+                    <button class="accordion panel-two"><strong>Tôi phải mất bao lâu để đạt mục tiêu thành nhà lập trình web?</strong> </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.commodo consequat.
 
-                            <button class="accordion panel-two"> <strong>Mô hình "CiOne Learning Care" hoạt động thế nào?</strong> </button>
-                            <div class="panel ">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
+                        </p>
+                    </div>
 
-                            <button class="accordion panel-two"> <strong>Coach và Mentor khác nhau điểm nào?</strong> </button>
-                            <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                       
-                            <button class="accordion panel-two"> <strong>Tôi đóng học phí bằng cách nào?</strong> </button>
-                            <div class="panel">
-                              <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
-                            </div>
-                        
+
+                    <button class="accordion panel-two"> <strong>Tôi nên chọn "học tự do" hay "học theo lộ trình"?</strong> </button>
+                    <div class="panel ">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion panel-two"> <strong>Tôi có được download video và tài liệu, mã nguồn khi tôi đã học?</strong> </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion panel-two"> <strong>Tại sao tôi không được sử dụng dịch vụ trên CiOne.vn trọn đời trong 1 lần đóng phí?</strong> </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                </div>
+                <div class="l-box l-box-lastchild pure-u-1 pure-u-md-12-24 pure-u-lg-12-24 pure-u-xl-12-24 is-center">
+                    <button class="accordion panel-two"><strong>Dịch vụ hỗ trợ chuyên môn 24/7 là gì?</strong> </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.commodo consequat.
+
+                        </p>
+                    </div>
+
+
+                    <button class="accordion panel-two"> <strong>Mô hình "CiOne Learning Care" hoạt động thế nào?</strong> </button>
+                    <div class="panel ">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion panel-two"> <strong>Coach và Mentor khác nhau điểm nào?</strong> </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
+                    <button class="accordion panel-two"> <strong>Tôi đóng học phí bằng cách nào?</strong> </button>
+                    <div class="panel">
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                    </div>
+
                 </div>
             </div>
-         </div>
-      </section>
-      
-       <!-------------------------Footer--------------------------------------->
-      <footer>
-             <div class="footer">
-              <div class="content">
-                  <div class="pure-g ">
-                      <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24 is-center">
-                       <a href="https://www.cione.vn" target="_blank">
+        </div>
+    </section>
+
+    <!-------------------------Footer--------------------------------------->
+    <footer>
+        <div class="footer">
+            <div class="content">
+                <div class="pure-g ">
+                    <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24 is-center">
+                        <a href="https://www.cione.vn" target="_blank">
                             <img class="pure-img-responsive logo-footer" src="https://i.imgur.com/qssor0m.png" alt="logo CiOne">
                         </a>
-                      </div>
-                      <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24">
-                            <h4>Thông tin</h4>
-                            <ul class="list-footer">
-                              <li><a href="https://www.cione.vn/blog/gioi-thieu/mo-hinh-learning-care" target="_blank" rel="noopener">Mô hình học</a></li>
-                              <li><a href="https://www.cione.vn/thanhtoanhocphi" target="_blank" rel="noopener">Hướng dẫn thanh toán học phí</a></li>
-                              <li><a href="https://www.cione.vn/hanhtrinhchinhphucuocmo" target="_blank">Hành trình chinh phục ước mơ cùng CiOne</a></li>
-                                <li><a href="https://youtu.be/8hLhg-5ZrTk" target="_blank">Hướng dẫn học viên học tại CiOne</a></li>
-                            </ul>
-                      </div>
-                      <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24">
-                          <h4>Liên kết</h4>
-                       <ul class="list-footer">
-                          <li><span class="icon-social fb"><a href="https://www.facebook.com/cione.vn/" target="_blank">Facebook</a></span></li>
-                          <li><span class="icon-social gg-plus"><a href="https://plus.google.com/u/0/b/105988327309925200005/105988327309925200005" target="_blank">Google+</a></span></li>
-                          <li><span class="icon-social skype"><a href="skype:cionecare?chat" target="_blank">Skype</a></span></li>
-                          <li><span class="icon-social youtube"><a href="https://www.youtube.com/c/cionevietnam" target="_blank">Youtube</a></span></li>
-                          <li><span class="icon-social youtube"><a href="https://www.cione.vn/blog/" target="_blank">Blog CiOne</a></span></li>
-                        </ul>
-                      </div>
-                      <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24">
-                          <h4>Liên hệ</h4>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24">
+                        <h4>Thông tin</h4>
                         <ul class="list-footer">
-                              <li>Phone: <span class="contact">0982 360 370</span></li>
-                              <li>Email: <span class="contact"><a href="mailto:cionecare@cione.vn">cionecare@cione.vn</a></span></li>
-                              <li>Skype: <span class="contact"><a href="skype:cionecare?chat">cionecare</a></span></li>
-                              <li>Địa chỉ: M9 Cư xá Nguyễn Đình Chiểu, Phường 4, Quận Phú Nhuận,<br> TP. Hồ Chí Minh</li>
-                            </ul>
-                      </div>
-                  </div>
-              </div>
-          </div>
-      </footer>    
-      
-      
- 
-           <!-------------------------Select course-------------------------------------->
-      <script>
-          
-          function getCookie(cname) {
-                var name = cname + "=";
-                var ca = document.cookie.split(';');
-                for(var i = 0; i < ca.length; i++) {
-                    var c = ca[i];
-                    while (c.charAt(0) == ' ') {
-                        c = c.substring(1);
-                    }
-                    if (c.indexOf(name) == 0) {
-                        return c.substring(name.length, c.length);
-                    }
-                }
-                return "";
-            }
-          function setCookie(cname,cvalue,exdays) {
-            var d = new Date(); //Create an date object
-            d.setTime(d.getTime() + (exdays*1000*60*60*24)); //Set the time to exdays from the current date in milliseconds. 1000 milliseonds = 1 second
-            var expires = "expires=" + d.toGMTString(); //Compose the expirartion date
-            window.document.cookie = cname+"="+cvalue+"; "+expires;//Set the cookie with value and the expiration date
-        }
-         
-          function delete_cookie(name) {
-              document.cookie = name +'=; Path=/; Expires=Thu, 01 Jan 1970 00:00:01 GMT;';
-            }
-          
-           var select = getCookie("route");
-          if(select=="designBuiding"){
-              document.cookie="selectone=designBuiding";
-              document.getElementById("action-choice1").classList.remove("hidden");
-              document.getElementById("designBuiding").innerHTML="Bỏ chọn";
-          }
-          else if(select=="frontEnd"){
-              document.cookie="selecttwo=frontEnd";
-                 document.getElementById("action-choice2").classList.remove("hidden");
-               document.getElementById("frontEnd").innerHTML="Bỏ chọn";
-          }
-          else{
-                document.cookie="selectthree=backEnd";
-                 document.getElementById("action-choice3").classList.remove("hidden");
-               document.getElementById("backEnd").innerHTML="Bỏ chọn";
-          }
-          
-          
-         
-          function selectOne(evt){
-                var valueSelect1 = evt.getAttribute("value");
-                var check = getCookie("selectone");
-                var checksecond = getCookie("route");
-              if(check!= ""){
-                  delete_cookie("selectone");
-                   document.getElementById("action-choice1").classList.add("hidden");
-                   document.getElementById(valueSelect1).innerHTML="Chọn";
-                  
-                  //lay gia tri price hien tai
-                  var number1= document.getElementById("option1").textContent;
-                   var number2= document.getElementById("option2").textContent;
-                   var number3= document.getElementById("option3").textContent;
-                  
-                  //tru lai
-                  sum1 = Number(number1) - Number(1);
-                    sum2 = Number(number2) - Number(2);
-                    sum3 = Number(number3) - Number(3);
-                  document.getElementById("option1").innerHTML = sum1;
-                  document.getElementById("option2").innerHTML = sum2;
-                  document.getElementById("option3").innerHTML = sum3;
-                
-              }
-              else{
-                  document.cookie='selectone=' +valueSelect1+'; path=/';
-                   document.getElementById("action-choice1").classList.remove("hidden");
-              document.getElementById(valueSelect1).innerHTML="Bỏ chọn";
-                  
-                    
-                  //lay gia tri price hien tai
-                  var number1= document.getElementById("option1").textContent;
-                   var number2= document.getElementById("option2").textContent;
-                   var number3= document.getElementById("option3").textContent;
-                  
-                  //cong lai
-                  sum1 = Number(number1) + Number(1);
-                    sum2 = Number(number2) + Number(2);
-                    sum3 = Number(number3) + Number(3);
-                  document.getElementById("option1").innerHTML = sum1;
-                  document.getElementById("option2").innerHTML = sum2;
-                  document.getElementById("option3").innerHTML = sum3;
-              }
-          }
-          function selectTwo(evt){
-                var valueSelect2 = evt.getAttribute("value");
-                var check = getCookie("selecttwo");
-              if(check!= ""){
-                  delete_cookie("selecttwo");
-                  document.getElementById("action-choice2").classList.add("hidden");
-                   document.getElementById(valueSelect2).innerHTML="Chọn";
-                  
-                   //lay gia tri price hien tai
-                  var number1= document.getElementById("option1").textContent;
-                   var number2= document.getElementById("option2").textContent;
-                   var number3= document.getElementById("option3").textContent;
-                  
-                  //tru lai
-                  sum1 = Number(number1) - Number(2);
-                    sum2 = Number(number2) - Number(3);
-                    sum3 = Number(number3) - Number(4);
-                  document.getElementById("option1").innerHTML = sum1;
-                  document.getElementById("option2").innerHTML = sum2;
-                  document.getElementById("option3").innerHTML = sum3;
-              }
-              else{
-                  document.cookie='selecttwo=' +valueSelect2+'; path=/';
-                  document.getElementById("action-choice2").classList.remove("hidden");
-                document.getElementById(valueSelect2).innerHTML="Bỏ chọn";
-                 
-                   //lay gia tri price hien tai
-                  var number1= document.getElementById("option1").textContent;
-                   var number2= document.getElementById("option2").textContent;
-                   var number3= document.getElementById("option3").textContent;
-                  
-                  //cong lai
-                  sum1 = Number(number1) + Number(2);
-                    sum2 = Number(number2) + Number(3);
-                    sum3 = Number(number3) + Number(4);
-                  document.getElementById("option1").innerHTML = sum1;
-                  document.getElementById("option2").innerHTML = sum2;
-                  document.getElementById("option3").innerHTML = sum3;
-              }
-          }
-          function selectThree(evt){
-                var valueSelect3 = evt.getAttribute("value");
-                var check = getCookie("selectthree");
-              if(check!= ""){
-                  delete_cookie("selectthree");
-                   document.getElementById("action-choice3").classList.add("hidden");
-                   document.getElementById(valueSelect3).innerHTML="Chọn";
-                  
-                     //lay gia tri price hien tai
-                  var number1= document.getElementById("option1").textContent;
-                   var number2= document.getElementById("option2").textContent;
-                   var number3= document.getElementById("option3").textContent;
-                  
-                  //tru lai
-                  sum1 = Number(number1) - Number(3);
-                    sum2 = Number(number2) - Number(4);
-                    sum3 = Number(number3) - Number(5);
-                  document.getElementById("option1").innerHTML = sum1;
-                  document.getElementById("option2").innerHTML = sum2;
-                  document.getElementById("option3").innerHTML = sum3;
-              }
-              else{
-                  document.cookie='selectthree=' +valueSelect3+'; path=/';
-                   document.getElementById("action-choice3").classList.remove("hidden");
-                    document.getElementById(valueSelect3).innerHTML="Bỏ chọn";
-                  
-                    //lay gia tri price hien tai
-                  var number1= document.getElementById("option1").textContent;
-                   var number2= document.getElementById("option2").textContent;
-                   var number3= document.getElementById("option3").textContent;
-                  
-                  //cong lai
-                  sum1 = Number(number1) + Number(3);
-                    sum2 = Number(number2) + Number(4);
-                    sum3 = Number(number3) + Number(5);
-                  document.getElementById("option1").innerHTML = sum1;
-                  document.getElementById("option2").innerHTML = sum2;
-                  document.getElementById("option3").innerHTML = sum3;
-              }
-          } 
-          function resultSelect(){
-              var result = getCookie("route");
-              if(result == "designBuiding"){
-                   document.getElementById("option1").textContent = "1";
-                  document.getElementById("option2").textContent = "2";
-                  document.getElementById("option3").textContent = "3";
-              }
-              else if(result == "frontEnd"){
-                   document.getElementById("option1").innerHTML = "2";
-                  document.getElementById("option2").innerHTML = "3";
-                  document.getElementById("option3").innerHTML = "4";
-              }
-              else{
-                   document.getElementById("option1").innerHTML = "3";
-                  document.getElementById("option2").innerHTML = "4";
-                  document.getElementById("option3").innerHTML = "5";
-              }
-          }
-          
-          /*--------------------pay----------*/
-          
-        
-          function checkCookieSelect (){
-              
-            var selectPay = getCookie("route");
-            var cookie1 = getCookie("selectone");
-            var cookie2 = getCookie("selecttwo");
-            var cookie3 = getCookie("selectthree");
-         
-             if(cookie1!=""){
-                     document.getElementById("name-course").innerHTML= cookie1 +" ,"+ cookie2 + " ,"+ cookie3;
-                }
-                else if(cookie2!=""){
-                   document.getElementById("name-course").innerHTML= cookie1 +" ,"+ cookie2 + " ,"+ cookie3;
-
-                }
-                else{
-                   document.getElementById("name-course").innerHTML= cookie1 +" ,"+ cookie2 + " ,"+ cookie3;
-                }
-          
-          }
-          
-            function PayOne( evt){
-                    checkCookieSelect();
-                    document.getElementById("name-option").innerHTML="Basic";
-                    var sum = document.getElementById("option1").textContent;
-                    document.getElementById("sum-price").innerHTML= sum + " VNĐ";
-
-                }
-           function PayTwo(){
-                checkCookieSelect();
-                    document.getElementById("name-option").innerHTML="Premium";
-                    var sum = document.getElementById("option2").textContent;
-                    document.getElementById("sum-price").innerHTML= sum + " VNĐ";
-
-                }
-          
-           function PayThree( ){
-                checkCookieSelect();
-                    document.getElementById("name-option").innerHTML="Vip";
-                    var sum = document.getElementById("option3").textContent;
-                    document.getElementById("sum-price").innerHTML= sum + " VNĐ";
-
-                }
-          
-          
-          
-          
-          window.onload = resultSelect();
-          /*
-         
-          function selectOne(evt){
-              var valueSelect = evt.getAttribute("value");
-              document.cookie= 'selectone=' +valueSelect+'; path=/';
-               document.getElementById("action-choice1").classList.remove("hidden");
-              document.getElementById("designBuiding").innerHTML="Bỏ chọn";
-          }
-           function selectTwo(evt){
-               //lay gia tri value cua button
-              var valueSelect = evt.getAttribute("value");
-              document.cookie= 'selecttwo=' +valueSelect+'; path=/';
-               document.getElementById("action-choice2").classList.remove("hidden");
-              document.getElementById("frontEnd").innerHTML="Bỏ chọn";
-          }
-          
-          function selectThree(evt){
-                var valueSelect = evt.getAttribute("value");
-              document.cookie= 'selectthree=' +valueSelect+'; path=/';
-               document.getElementById("action-choice3").classList.remove("hidden");
-              document.getElementById("backEnd").innerHTML="Bỏ chọn";
-              
-              if(coookie!= null){
-                  //
-              }
-          }
-
-        */
-      </script>
-      
-      <script>
-            window.onscroll = function() {changeColor()};
-
-            function changeColor() {
-                if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
-                    document.getElementById("nav").classList.add('nav-scrolled') ;
-                    document.getElementById("menu").classList.add('background-change') ;
-                     document.getElementById("menu-top").classList.add('menu-change') ;
-                    document.getElementById("logo").src="https://i.imgur.com/RD9dZzv.png";
-                     document.getElementById("toggle").classList.add('change-icon') ;
-
-                } else {
-                    document.getElementById("nav").classList.remove('nav-scrolled') ;
-                    document.getElementById("menu").classList.remove('background-change');
-                     document.getElementById("menu-top").classList.remove('menu-change');                  
-                 document.getElementById("toggle").classList.remove('change-icon') ;
-
-                }
-            }
-      </script>
-      <!-------------------------Choice bank-------------------------------------->
-      <script type="application/javascript">
-            function checkSelect(){   
-           var value = document.getElementById("mySelect").value;
-
-            if(value==="vietcombank"){
-                 checkElement();
-
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 044 100 377 8455";
-
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
-
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Cộng Hoà, Tân Bình, HCM";
-
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
+                            <li><a href="https://www.cione.vn/blog/gioi-thieu/mo-hinh-learning-care" target="_blank" rel="noopener">Mô hình học</a></li>
+                            <li><a href="https://www.cione.vn/thanhtoanhocphi" target="_blank" rel="noopener">Hướng dẫn thanh toán học phí</a></li>
+                            <li><a href="https://www.cione.vn/hanhtrinhchinhphucuocmo" target="_blank">Hành trình chinh phục ước mơ cùng CiOne</a></li>
+                            <li><a href="https://youtu.be/8hLhg-5ZrTk" target="_blank">Hướng dẫn học viên học tại CiOne</a></li>
+                        </ul>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24">
+                        <h4>Liên kết</h4>
+                        <ul class="list-footer">
+                            <li><span class="icon-social fb"><a href="https://www.facebook.com/cione.vn/" target="_blank">Facebook</a></span></li>
+                            <li><span class="icon-social gg-plus"><a href="https://plus.google.com/u/0/b/105988327309925200005/105988327309925200005" target="_blank">Google+</a></span></li>
+                            <li><span class="icon-social skype"><a href="skype:cionecare?chat" target="_blank">Skype</a></span></li>
+                            <li><span class="icon-social youtube"><a href="https://www.youtube.com/c/cionevietnam" target="_blank">Youtube</a></span></li>
+                            <li><span class="icon-social youtube"><a href="https://www.cione.vn/blog/" target="_blank">Blog CiOne</a></span></li>
+                        </ul>
+                    </div>
+                    <div class="l-box pure-u-1 pure-u-md-6-24 pure-u-lg-6-24 pure-u-xl-6-24">
+                        <h4>Liên hệ</h4>
+                        <ul class="list-footer">
+                            <li>Phone: <span class="contact">0982 360 370</span></li>
+                            <li>Email: <span class="contact"><a href="mailto:cionecare@cione.vn">cionecare@cione.vn</a></span></li>
+                            <li>Skype: <span class="contact"><a href="skype:cionecare?chat">cionecare</a></span></li>
+                            <li>Địa chỉ: M9 Cư xá Nguyễn Đình Chiểu, Phường 4, Quận Phú Nhuận,
+                                <br> TP. Hồ Chí Minh</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 
-            }
-            else if(value==="acb"){
-               checkElement();
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 174 313 789";
 
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
+    <!-------------------------Select course-------------------------------------->
+    <script src="app/app.js"></script>
+    <script>
+        window.onscroll = function () {
+            changeColor()
+        };
 
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Sài Gòn";
+        function changeColor() {
+            if (document.body.scrollTop > 50 || document.documentElement.scrollTop > 50) {
+                document.getElementById("nav").classList.add('nav-scrolled');
+                document.getElementById("menu").classList.add('background-change');
+                document.getElementById("menu-top").classList.add('menu-change');
+                document.getElementById("logo").src = "https://i.imgur.com/RD9dZzv.png";
+                document.getElementById("toggle").classList.add('change-icon');
 
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
-
-            }
-            else if(value==="vietin"){
-               checkElement();
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 711 A05 365 361";
-
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
-
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Phan Đình Phùng - Phú Nhuận";
-
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
-
-            }
-            else if(value==="sacom"){
-               checkElement();
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 060 100 529 109";
-
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
-
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Thị Nghè - Tp. Hồ Chí Minh";
-
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
-
-            }
-            else if(value==="bidv"){
-               checkElement();
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 186 100 000 797 49";
-
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
-
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Hàm Nghi";
-
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
-
-            }
-              else if(value==="agri"){
-               checkElement();
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 1604 2053 91816";
-
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
-
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Phú Nhuận - Sài Gòn";
-
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
-
-            }
-              else if(value==="tech"){
-               checkElement();
-                //tao span
-                var span = document.createElement("span");
-                var classname = document.createAttribute("class");
-                classname.value="number-account";
-                span.setAttributeNode(classname);
-                span.textContent=" 1902 8617 0050 10";
-
-                var list = document.querySelector("li.number-account");
-                list.appendChild(span);
-
-                 //tao location
-                var spanlocation = document.createElement("span");
-                var classnamelocation = document.createAttribute("class");
-                classnamelocation.value="location";
-                spanlocation.setAttributeNode(classnamelocation);
-                spanlocation.textContent=" Nguyễn Kiệm - Phú Nhuận";
-
-                var listlocation = document.querySelector("li.detail-location");
-                listlocation.appendChild(spanlocation);
-
-            }
-        }
-
-        function checkElement(){
-            var checkspan = document.querySelector("span.number-account");
-             var checkspanlocation = document.querySelector("span.location");
-            if(checkspan!=null){
-                var listspan = document.querySelector("li.number-account");
-                listspan.removeChild(checkspan);
-
-                var lilocation = document.querySelector("li.detail-location");
-                lilocation.removeChild(checkspanlocation);
-            }
-        }
-      </script>
-      
-       <!-------------------------Scollapse----------------------------------->
-      <script>
-        var acc = document.getElementsByClassName("accordion");
-        var i;
-
-        for (i = 0; i < acc.length; i++) {
-          acc[i].addEventListener("click", function() {
-            this.classList.toggle("active");
-            var panel = this.nextElementSibling;
-            if (panel.style.maxHeight){
-              panel.style.maxHeight = null;
             } else {
-              panel.style.maxHeight = panel.scrollHeight + "px";
-            } 
-          });
+                document.getElementById("nav").classList.remove('nav-scrolled');
+                document.getElementById("menu").classList.remove('background-change');
+                document.getElementById("menu-top").classList.remove('menu-change');
+                document.getElementById("toggle").classList.remove('change-icon');
+
+            }
         }
-        </script>
+    </script>
+    <!-------------------------Choice bank-------------------------------------->
+    <script type="application/javascript">
         
-      <!-------------------------Menu-------------------------------------->
-      <script>
-          (function (window, document) {
-          var menu = document.getElementById('menu'),
-              WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange':'resize';
+        function selectBank() {
+            var value = document.querySelector('#mySelect').value;
+            var bankAcc = document.querySelector('#bankacc');
+            var bankOwn = document.querySelector('#bankown');
+            var bankBranch = document.querySelector('#bankbranch');
 
-          function toggleHorizontal() {
+            if (value === "vietcombank") {
+                bankAcc.textContent = "044 100 377 8455";
+                bankBranch.textContent = " Cộng Hoà, Tân Bình, HCM";
+                bankOwn.textContent = "Phó Hải Đăng";
+            } else if (value === "acb") {
+                bankAcc.textContent = "174 313 789";
+                bankBranch.textContent = "Sài Gòn";
+                bankOwn.textContent = "Phó Hải Đăng";
+            } else if (value === "vietin") {
+                bankAcc.textContent = "711 A05 365 361";
+                bankBranch.textContent = "Phan Đình Phùng - Phú Nhuận";
+                bankOwn.textContent = "Phó Hải Đăng";
+            } else if (value === "sacom") {
+                bankAcc.textContent = "060 100 529 109";
+                bankBranch.textContent = "Thị Nghè - Tp. Hồ Chí Minh";
+                bankOwn.textContent = "Phó Hải Đăng";
+            } else if (value === "bidv") {
+                bankAcc.textContent = "186 100 000 797 49";
+                bankBranch.textContent = "Hàm Nghi";
+                bankOwn.textContent = "Phó Hải Đăng";
+            } else if (value === "agri") {
+                bankAcc.textContent = "1604 2053 91816";
+                bankBranch.textContent = "Phú Nhuận - Sài Gòn";
+                bankOwn.textContent = "Phó Hải Đăng";
+            } else if (value === "tech") {
+                bankAcc.textContent = "1902 8617 0050 10";
+                bankBranch.textContent = "Nguyễn Kiệm - Phú Nhuận";
+                bankOwn.textContent = "Phó Hải Đăng";
+            }
+        }
+        document.querySelector('#mySelect').selectedIndex = 0;   
+        selectBank();
+
+    </script>
+
+    <!-------------------------Menu-------------------------------------->
+    <script>
+        (function (window, document) {
+            var menu = document.getElementById('menu')
+                , WINDOW_CHANGE_EVENT = ('onorientationchange' in window) ? 'orientationchange' : 'resize';
+
+            function toggleHorizontal() {
               [].forEach.call(
-                  document.getElementById('menu').querySelectorAll('.custom-can-transform'),
-                  function(el){
-                      el.classList.toggle('pure-menu-horizontal');
-                  }
-              );
-          };
+                    document.getElementById('menu').querySelectorAll('.custom-can-transform')
+                    , function (el) {
+                        el.classList.toggle('pure-menu-horizontal');
+                    }
+                );
+            };
 
-          function toggleMenu() {
-              // set timeout so that the panel has a chance to roll up
-              // before the menu switches states
-              if (menu.classList.contains('open')) {
-                  setTimeout(toggleHorizontal, 500);
-              }
-              else {
-                  toggleHorizontal();
-              }
-              menu.classList.toggle('open');
-              document.getElementById('toggle').classList.toggle('x');
-          };
+            function toggleMenu() {
+                // set timeout so that the panel has a chance to roll up
+                // before the menu switches states
+                if (menu.classList.contains('open')) {
+                    setTimeout(toggleHorizontal, 500);
+                } else {
+                    toggleHorizontal();
+                }
+                menu.classList.toggle('open');
+                document.getElementById('toggle').classList.toggle('x');
+            };
 
-          function closeMenu() {
-              if (menu.classList.contains('open')) {
-                  toggleMenu();
-              }
-          }
+            function closeMenu() {
+                if (menu.classList.contains('open')) {
+                    toggleMenu();
+                }
+            }
 
-          document.getElementById('toggle').addEventListener('click', function (e) {
-              toggleMenu();
-              e.preventDefault();
-          });
+            document.getElementById('toggle').addEventListener('click', function (e) {
+                toggleMenu();
+                e.preventDefault();
+            });
 
-          window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
-          })(this, this.document);
-      
-      </script>
-      
-      <script type="application/javascript" src="https://purecss.io/js/menus.js"></script>
-  </body>
+            window.addEventListener(WINDOW_CHANGE_EVENT, closeMenu);
+        })(this, this.document);
+    </script>
+
+    <script type="application/javascript" src="https://purecss.io/js/menus.js"></script>
+</body>
+
 </html>
