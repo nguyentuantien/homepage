@@ -21,6 +21,7 @@ h6,
 label {
     color: #34495e;
 }
+
 .text-path{
     color: white;
 }
@@ -42,6 +43,9 @@ label {
 .l-box-lrg {
     padding: 2em;
     border-bottom: 1px solid rgba(0,0,0,0.1);
+}
+.pull-right{
+    text-align: right;
 }
 
 .is-center {
@@ -672,6 +676,7 @@ img.pure-img-responsive.logo-footer {
         position:  relative;
         top: -42px;
     }
+    
     .content.splash-content {
         padding-top: 7em;
         
@@ -743,6 +748,7 @@ img.pure-img-responsive.logo-footer {
         top: 1em;
         padding-right:  3em;
     }
+    
     .btn-learn, .btn-register{
         padding: 3px 40px;
     }
