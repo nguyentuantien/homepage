@@ -26,7 +26,7 @@ a.btn-next {
     font-weight:  bold;
 }
 a.btn-next:hover{
-    color: #333;
+    color: #1f94b1;
 }
 a.btn-next span {
     margin-left: 15px;
@@ -60,6 +60,55 @@ img.img-banner-design.pure-img-responsive{
 }
 img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
     display: none;
+}
+.list-project {
+    display: block;
+    padding-bottom: 15px;
+    border: 1px solid #31C1E4;
+    margin-bottom: 20px;
+    background-color: #fff;
+}
+.list-project:hover {
+    box-shadow: 5px 0px 40px rgba(0,0,0, .5);
+    transition: 0.8s;
+    border: 0;
+}
+.list-project>a>img{
+	width: 100%;
+	height: auto;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+.list-project>p>a{
+	text-decoration: none;
+    font-weight: bold;
+    color: #0d72b9;
+}
+.list-project>p>a:hover{
+	color: #31C1E4;
+}
+.list-project>p{
+    padding: 0;
+    margin: 0;
+
+}
+.project{
+	background-color: #F5F5F5;
+}
+a.button-register {
+    text-decoration:  none;
+    color: white;
+    padding: 10px 38px;
+    background-color: #0d72b9;
+    font-weight:  bold;
+    text-align:  center;
+    margin-top: 2em;
+    display: inline-block;
+}
+
+a.button-register:hover {
+    background-color: #0b94dc;
 }
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
