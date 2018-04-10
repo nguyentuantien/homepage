@@ -391,7 +391,9 @@
             document.addEventListener('click', function (evt) {
                 if (evt.target && evt.target.matches('.pure-menu-link')) {
                     if (!evt.target.nextElementSibling || !evt.target.nextElementSibling.classList.has('.pure-menu-children')) {
-                        toggleMenu();
+                        if(menu.classList.contains('open')){
+                            toggleMenu();
+                        }
                     }
                 }
             });
