@@ -1,0 +1,361 @@
+#decorator{
+    width: 100%;
+    position: absolute;
+    height: 100%;
+    background: #0d72b9;
+    top:0;
+    z-index: 100;
+    transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+    -webkit-transform: rotate(62deg) scale(2) skew(-1deg) translate(-65%,0);
+    -moz-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+    -o-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+    -ms-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+}
+.accordion {
+    color: #444;
+    cursor: pointer;
+    padding: 10px 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    transition: 0.4s;
+    background-color: transparent;
+    font-size: 20px;
+}
+.accordion.active{
+    color: red;
+    width: 100%;
+}
+.accordion.panel-two.active{
+    color: #0d72b9;
+}
+.accordion:after {
+    content: '\25B8';
+    color: #777;
+    font-weight: bold;
+    float: left;
+    margin-right: 10px;
+}
+
+.active:after {
+    content: "\25BE";
+    color: red;
+}
+.panel-two.active:after {
+    content: "\25BE";
+    color:  #0d72b9;
+}
+
+.panel {
+    padding: 0 18px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
+.panel p{
+    text-align: left;
+}
+/*---------------Speacker author------------------------*/
+img.img-author.pure-img-responsive {
+    border-radius:  50%;
+    margin-top: 10px;
+}
+.box-speacker{
+    border: 1px solid #a79e9e;
+    border-radius: 20px;
+    padding: 10px 20px;
+}
+.text-author{
+    text-align: center;
+}
+.line-botton{
+        border-bottom: 1px solid #a79e9e;
+}
+img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
+    display: none;
+}
+div#decorator {
+    display: contents;
+}
+.splash-container{
+    background-color: #0d72b9;
+}
+.title-header h1{
+    color: white;
+    
+}
+/* -----------------------------------------Larger than mobile -----------------------------------------*/
+@media (min-width: 400px) {
+   
+}
+
+@media (min-width: 550px) {
+   
+/*--------------- splash-container ----------------------------*/
+    
+   
+   
+}
+
+/* -----------------------------------------Larger than tablet -----------------------------------------*/
+@media (min-width: 750px) {
+    .splash-container{
+        background-color: transparent;
+    }
+    div#decorator {
+        display: inherit;
+    }
+    img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
+        display: inherit;
+    }
+      img.img-banner.pure-img-responsive {
+        width: 298px;
+    }
+    .splash-content h1{
+        color: white;
+    }
+    #splash-banner{
+        position: relative;
+        z-index: 101;
+        overflow: hidden;
+    }
+    
+    .panel p {
+    padding-left: 50px;
+}
+    h1#rain-learn {
+        margin-top:  3em;
+    }
+    .text-path{
+        color: black;
+    }
+       img.logo-img {
+       margin-top: 5px;
+    }
+    .learn-plan-content {
+       margin-bottom: 5px;
+        margin-left: 33px;
+    }
+    /* ------------------menu change color -------------------*/
+    #decorator {
+        transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+        -webkit-transform: rotate(62deg) scale(2) skew(3deg) translate(-56%,0);
+        -moz-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+        -o-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+        -ms-transform: rotate(147deg) scale(0.858) skew(-32deg) translate(44px);
+    }
+    .menu-change ul.pure-menu-list ul.pure-menu-children{
+         -webkit-box-shadow: 2px 11px 18px 2px rgba(0, 0, 0, 0.08);
+         -moz-box-shadow: 2px 11px 18px 2px rgba(0,0,0,0.24);
+         box-shadow: 2px 16px 18px 2px rgba(0,0,0,0.24);
+    }
+    a.icon-drop {
+        font-size: 30px;
+        font-weight:  bold;
+        position: relative;
+        top: -173px;
+        color: white;
+    }
+    .learn-plan-content {
+       margin-bottom: 5px;
+        margin-left: 33px;
+    }
+    .learn-plan-content {
+        margin-bottom: 5px;
+        margin-left: 33px;
+    }
+  
+    .learn-plan-content h3 {
+        margin-bottom: -18px;
+        margin-top: 12px;
+    }
+    ul.title-course {
+        padding-left: 0;
+        margin-top: 13px;
+        margin-bottom: -10px;
+    }
+     
+   
+    .pure-g.box-plan-two {
+          margin-left: 20px;
+           margin-right: 20px;
+    }
+
+   
+    
+    ul.pure-menu-list li:hover > ul{
+        display: block;
+        text-align: left !important;
+    }
+    .g.g--l--reverse {
+    display:  flex;
+        flex-direction: row-reverse;
+    }
+    .g-b {
+        box-sizing: border-box;
+        float: left;
+        width: 50%;
+    }
+/*----------Menu--------------------*/
+    .how-container, .vip-speacker {
+        padding-top: 46px;
+        padding-bottom: 60px;
+    }
+  
+   
+ 
+   
+    .btn-learn, .btn-register{
+        border-radius: 36px;
+        margin-right: 10px;
+        width: auto;
+    }
+
+    /*----------splat-container--------------------*/
+    .splash-container{
+        position:  relative;
+        top: -42px;
+    }
+    
+    .content.splash-content {
+        padding-top: 7em;
+        
+        
+    }
+        .margin-left-content{
+        margin-left: -50px;
+    }
+     /*----------plan learning--------------------*/
+   .img-cancel{
+        width: 7%;
+    }
+    
+    .panel p {
+    padding-left: 50px;
+}
+    img.pure-img-responsive.logo-footer{
+         display: inherit;
+        width: 80%;
+        margin-top: 4em;
+    }
+   
+    .pure-g.box-how-learn {
+       padding: 0px 50px 0 50px;
+         margin-bottom: 4em;
+    }
+    .pure-g.box-plan.box-first{
+        margin-top: 4em;
+    }
+     img.img-banner.pure-img-responsive.img-header-two {
+        width: 173px;
+        display:  block;
+        opacity: 0.1;
+        margin-left: 196px;
+        margin-top: 3px;
+    }
+    img.img-banner.pure-img-responsive.img-header-one {
+        opacity: 0.1;
+        width: 180px;
+        display: block;
+        margin-left: 159px;
+        margin-top: -327px;
+    }
+     .btn-learn, .btn-register{
+        padding: 3px 30px;
+    }
+}
+
+/*----------------------------------------- Larger than desktop -----------------------------------------*/
+@media (min-width: 1000px) {
+    h1#rain-learn{
+        margin-top: 0;
+    }
+     .splash-content {
+        position:  relative;
+        top: 1em;
+        padding-right:  3em;
+    }
+    
+    .btn-learn, .btn-register{
+        padding: 3px 40px;
+    }
+    .content.splash-content {
+        padding-top: 12em;
+        
+    }
+     .pure-g.box-plan {
+        margin-left: 90px;
+           margin-right: 90px;
+       }
+
+    .pure-g.box-plan-two {
+          margin-left: 90px;
+           margin-right: 90px;
+    }
+    .pure-g.box-how-learn {
+       padding: 0px 90px 0 90px;
+    }
+    .line-left{
+        border-left: 1px solid #cccccc;
+    }
+     .logo-footer{
+        width: 70%;
+    }
+  .img-cancel{
+        display: inline;
+    }
+
+}
+
+/*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
+@media (min-width: 1200px) {
+   img.logo-img { 
+       margin-top: 5px;
+    }
+    .content {
+        padding: 0 100px;
+    }
+    
+    
+/*--------------- splash-container ----------------------------*/
+    img.img-banner{
+       width: 65%;
+        top: -69px;
+        position: relative;
+    }
+    .img-learn-plan{
+        width: 37%;
+    }
+    .pure-img-responsive {
+        max-width: 100%;
+    }
+    
+    img.pure-img-responsive.logo-footer {
+        width: 69%;
+    }
+    .pure-g.box-plan.box-first {
+        margin-top: 90px;
+    }
+    .pure-g.box-plan.box-first, .pure-g.box-plan-two{
+        margin-bottom: 20px;
+    }
+}
+@media (min-width: 1300px) {
+     .img-learn-plan{
+       width: 53%;
+        margin-top: 24px;
+    }
+    .pure-g.box-plan.box-first {
+        margin-top: 84px;
+    }
+}
+@media (min-width: 1500px) {
+     .img-learn-plan{
+        width: 29%;
+    }
+    .learn-plan-content p {
+        width: 75%;
+    }
+}

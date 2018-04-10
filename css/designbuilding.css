@@ -21,8 +21,12 @@ a.start-learn {
     background-color: white;
 }
 a.btn-next {
-    color:  #333;
+    color: #0d72b9;
     text-decoration:  none;
+    font-weight:  bold;
+}
+a.btn-next:hover{
+    color: #333;
 }
 a.btn-next span {
     margin-left: 15px;
@@ -54,6 +58,9 @@ img.img-banner-design.pure-img-responsive{
 .img-content{
     width: 180px;
 }
+img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
+    display: none;
+}
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
     
@@ -68,6 +75,9 @@ img.img-banner-design.pure-img-responsive{
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
+        display: inherit;
+    }
     h1#rain-learn{
         margin-top: 0;
     }

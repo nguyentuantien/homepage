@@ -1,54 +1,8 @@
 
-*{
-    box-sizing: border-box;
-    font-family: 'Nunito',sans-serif;
-}
-body {
-    line-height: 28px;
-    font-size: 17px;
-    font-weight: 300;
-    background-color: #f4f4f4;
-}
-.hidden{
-    display: none;
-}
-.color-white{
-    color: white;
-}
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
+
 label {
     color: #34495e;
 }
-
-.pure-img-responsive {
-    max-width: 100%;
-    height: auto;
-}
-.content {
-    padding: 1em 1em 3em;
-}
-/*
- * -- LAYOUT STYLES --
- * These are some useful classes which I will need----------------------------------------------------------------------------------
- */
-.l-box {
-    padding: 1em;
-}
-
-.l-box-lrg {
-    padding: 2em;
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-}
-
-.is-center {
-    text-align: center;
-}
-/* Mobile first queries */
 
 .box-header-content{
     position: relative;
@@ -170,6 +124,7 @@ a.pure-menu-link {
     img.logo-img {
         width: 104px;
         height: 40px;
+        margin-top: 0;
     }
     .pure-menu-list{
         display: block;
@@ -281,11 +236,7 @@ ul.title-course{
     background-color: white;
     border: 1px solid #0d72b9;
 }
-.splash-content h1 {
-   font-size: 22pt;
-    line-height: 42px;
-    margin-top: 73px;
-}
+
 .pure-g.box-plan {
     margin-bottom: 3em;
     background-color: white;
@@ -493,23 +444,7 @@ select#mySelect {
     width:  100%;
 }
 
-/*---------------Footer----------------------------*/
-.footer{
-    background-color: #0d72b9;
-}
-.footer h4, .text-white{
-    color: white;
-}
-ul.list-footer li, ul.list-footer li a{
-    color: white;
-    list-style: none;
-}
-ul.list-footer li a, ul.list-footer li a:hover{
-    text-decoration: none;
-}
-ul.list-footer{
-    padding-left: 0;
-}
+
 .img-cancel{
         display: none;
     }
@@ -599,13 +534,7 @@ img.img-banner.pure-img-responsive {
 .img-banner-position{
      position: relative;
 }
-img.pure-img-responsive.logo-footer {
-    display:  none;
-}
-ul.list-footer li {
-    line-height: 24px;
-    margin-bottom: 15px;
-}
+
 .content-path p {
         line-height: 18pt;
     }
@@ -656,6 +585,14 @@ ul.list-footer li {
 a.pure-menu-link.active-two.menu-register:hover{
     background-color: #0d72b9;
     color: white;
+}
+
+.splash-content-pay p{
+    color: black;
+}
+
+ul.title-course {
+    margin-bottom: 7px;
 }
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
@@ -874,25 +811,16 @@ a.pure-menu-link.active-two.menu-register:hover{
         padding-top: 7em;
         overflow: hidden;
     }
-    .splash-content h1 {
-        line-height: 42px;
-        font-size: 42px;
-    }
+ 
     .margin-left-content{
-        margin-left: -50px;
+        margin-left: 0;
     }
      /*----------plan learning--------------------*/
    .img-cancel{
         width: 7%;
     }
     
-    .logo-footer{
-        width: 100%;
-        margin-top: 4em;
-    }
-    .logo-footer{
-        width: 80%;
-    }
+  
  .pure-g.box-how-learn {
    padding: 0px 90px 0 90px;
      margin-bottom: 4em;
@@ -940,9 +868,7 @@ a.pure-menu-link.active-two.menu-register:hover{
     .line-left{
         border-left: 1px solid #cccccc;
     }
-     .logo-footer{
-        width: 70%;
-    }
+  
   .img-cancel{
         display: inline;
     }
@@ -970,9 +896,7 @@ a.pure-menu-link.active-two.menu-register:hover{
         max-width: 100%;
     }
     
-    img.pure-img-responsive.logo-footer {
-        width: 69%;
-    }
+   
     .pure-g.box-plan.box-first {
         margin-top: 60px;
     }
