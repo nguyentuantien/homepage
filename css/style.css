@@ -750,8 +750,13 @@ img.pure-img-responsive.logo-footer {
     .learn-plan-content p {
         width: 75%;
     }
-    .content {
-      width: 1170px;
+    .limit-w1000 {
+        max-width: 1170px;
+        margin-right: auto;
+        margin-left: auto;
+    }
+    .limit-w750 {
+        max-width: 750px;
         margin-right: auto;
         margin-left: auto;
     }
