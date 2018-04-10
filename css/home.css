@@ -1,3 +1,15 @@
+a.btn-next{
+    color: #0d72b9;
+    text-decoration:  none;
+    font-weight:  bold;
+}
+a.btn-next:hover{
+    color: #1f94b1;
+}
+a.btn-next span {
+    margin-left: 15px;
+    font-size: 30px;
+}
 #decorator{
     width: 100%;
     position: absolute;
