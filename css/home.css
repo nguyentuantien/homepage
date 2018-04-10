@@ -98,6 +98,9 @@ div#decorator {
     color: white;
     
 }
+.img-learn-plan {
+    width: 75%;
+}
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
    
@@ -356,7 +359,7 @@ div#decorator {
 }
 @media (min-width: 1300px) {
      .img-learn-plan{
-       width: 53%;
+       width: 85%;
         margin-top: 24px;
     }
     .pure-g.box-plan.box-first {
