@@ -1,0 +1,171 @@
+.splash-content-sticker p{
+    color: black;
+}
+.text-blue{
+    color: #0d72b9;
+}
+a.nhan-sticker {
+    background-color: #0d72b9;
+    padding: 10px;
+    border-radius: 10px;
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+.splash-content{
+    background-color: white;
+}
+.custom-wrapper{
+    background-color: white;
+}
+.pure-menu-link {
+    color: #0d72b9;
+}
+.background-white{
+    background-color: white;
+}
+.form-group label{
+    font-weight: bold;
+    color: black;
+}
+.btn-confirm{
+    padding: 10px;
+    width: 100%;
+    background-color: #0d72b9;
+    color: white;
+    font-weight: bold;
+    margin: 20px 0;
+    border: none;
+    border-radius: 10px;
+}
+.form-group input{
+    display: block;
+    width: 100%;
+    border-radius: 10px;
+    outline: none;
+    background-color: #eee;
+    padding: 5px;
+    height: 45px;
+    border: 1px solid #b3b2b2;
+}
+/* Customize the label (the container) */
+.container {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  font-size: 22px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 15px;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+}
+input[type="checkbox"] {
+    width: 25px;
+    height: 25px;
+}
+
+
+.img-banner-position{
+        background-color: #0d72b9;
+    }
+
+/* End Check box */
+
+  .term{
+        height: 0;
+    }
+.term:after{
+  
+}
+/* -----------------------------------------Larger than mobile -----------------------------------------*/
+@media (min-width: 400px) {
+  
+}
+
+/*----------------------------------------- Larger than phablet----------------------------------------- */
+@media (min-width: 550px) {
+
+    
+}
+
+/* -----------------------------------------Larger than tablet -----------------------------------------*/
+@media (min-width: 750px) {
+    .term{
+        height: 13em;
+    }
+    
+    .img-banner-position{
+        background-color: transparent;
+    }
+    .img-banner-sticker{
+        width: 65%;
+        top: 0;
+        position: relative;
+        z-index: 10;
+    }
+    .img-banner-sticker-two{
+        width: 35%;
+    }
+  .trainform{
+      transform: rotate(332deg) scale(1.5) skew(-14deg) translate(-32px);
+      -webkit-transform: rotate(340deg) scale(1.5) skew(0deg) translate(-36px);
+      -moz-transform: rotate(329deg) scale(1.5) skew(-14deg) translate(-32px);
+      -o-transform: rotate(329deg) scale(1.5) skew(-14deg) translate(-32px);
+      -ms-transform: rotate(329deg) scale(1.5) skew(-14deg) translate(-32px);
+      top: 40px;
+      height: 246px;
+      z-index: 0;
+      position: inherit;
+      background-color: #0d72b9;
+      position:  relative;
+    }
+    
+    .content.splash-content {
+        padding-top: 7em;
+        overflow: hidden;
+    }
+    .img-banner-sticker-two{
+        margin-left: 12em;
+    }
+}
+
+
+/*----------------------------------------- Larger than desktop -----------------------------------------*/
+@media (min-width: 1000px) {
+    .term{
+        height: 18em;
+    }
+
+
+}
+
+/*-----------------------------------------Larger than Desktop HD -----------------------------------------*/
+@media (min-width: 1200px) {
+   
+ 
+}
+@media (min-width: 1300px) {
+  
+}
+@media (min-width: 1500px) {
+
+}
