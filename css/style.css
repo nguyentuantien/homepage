@@ -447,8 +447,13 @@ img.pure-img-responsive.logo-footer {
         border-radius: 5px;
     }
     .menu-change.menu-change a.pure-menu-link.active-two.menu-register{
+        color:  #0d72b9;
+        background-color: white;
+        border: 1px solid #0d72b9;
+    }
+    .menu-change.menu-change a.pure-menu-link.active-two.menu-register:hover{
+        background-color: #f77607;
         color: white;
-        background-color: #f15a24;
         border: none;
     }
     
@@ -679,15 +684,7 @@ img.pure-img-responsive.logo-footer {
         padding-top: 12em;
         
     }
-     .pure-g.box-plan {
-        margin-left: 90px;
-           margin-right: 90px;
-       }
-
-    .pure-g.box-plan-two {
-          margin-left: 90px;
-           margin-right: 90px;
-    }
+     
     .pure-g.box-how-learn {
        padding: 0px 90px 0 90px;
     }
