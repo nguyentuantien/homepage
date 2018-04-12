@@ -1,9 +1,4 @@
 /* Basic styles */
-
-a.disabled {
-   pointer-events: none;
-   cursor: default;
-}
 .banner-pay{
     padding-top: 6em;
 }
@@ -283,6 +278,15 @@ img.img-pay.pure-img-responsive {
 }
 .box-pay h2{
     color: black;
+}
+.none-active p.price{
+    visibility: hidden;
+}
+
+.none-active a.btn-payment {
+   pointer-events: none;
+   cursor: default;
+    visibility: hidden;
 }
 p.price {
     font-size:  30px;
