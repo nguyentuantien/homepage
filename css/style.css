@@ -243,9 +243,7 @@ a.pure-menu-link.active-two.menu-register:hover{
     position: relative;
     z-index: 101;
 }
-.title-header p{
-    text-shadow: 1px 1px 20px #484545;
-}
+
 /*--------------- learn-plan----------------------------*/
 ul.title-course li{
     display: inline-block;
@@ -446,6 +444,7 @@ img.pure-img-responsive.logo-footer {
         border:  1px solid;
         line-height: 20px;
         margin-top: 15px;
+        border-radius: 5px;
     }
     .menu-change.menu-change a.pure-menu-link.active-two.menu-register{
         color: white;

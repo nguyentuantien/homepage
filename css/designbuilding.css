@@ -2,7 +2,13 @@ a.link-web {
     text-decoration:  none;
     color: #ff0;
 }
-
+.time-course{
+    color: #a79e9e;
+    margin-top: -18px;
+}
+.time-course strong{
+    color: black;
+}
 a.btn-register.btn-register-design {
     background-color: white;
     color: #0d72b9;

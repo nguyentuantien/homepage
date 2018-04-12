@@ -1,3 +1,6 @@
+.text-black{
+    color: black;
+}
 a.btn-next{
     color: #0d72b9;
     text-decoration:  none;
@@ -116,6 +119,26 @@ div#decorator {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+      .splash-content h1{
+        color: white;
+    }
+  #decorator2{
+        width: 100%;
+        position: absolute;
+        height: 500px;
+        background: #0d72b9;
+        top: -138px;
+        z-index: 1;
+        left: -38px;
+        transform: rotate(331deg) scale(1.5) skew(-10deg) translate(-9px);
+        -webkit-transform: rotate(331deg) scale(1.5) skew(-10deg) translate(-9px);
+        -moz-transform: rotate(331deg) scale(1.5) skew(-10deg) translate(-9px);
+        -o-transform: rotate(331deg) scale(1.5) skew(-10deg) translate(-9px);
+        -ms-transform: rotate(331deg) scale(1.5) skew(-10deg) translate(-9px);
+    }
+    .title-black h1, .title-black p{
+        color: black;
+    }
     .splash-container{
         background-color: transparent;
     }
@@ -128,9 +151,7 @@ div#decorator {
       img.img-banner.pure-img-responsive {
         width: 298px;
     }
-    .splash-content h1{
-        color: white;
-    }
+  
     #splash-banner{
         position: relative;
         z-index: 101;
@@ -337,7 +358,7 @@ div#decorator {
 /*--------------- splash-container ----------------------------*/
     img.img-banner{
        width: 65%;
-        top: -69px;
+        top: -106px;
         position: relative;
     }
     .img-learn-plan{
@@ -359,7 +380,7 @@ div#decorator {
 }
 @media (min-width: 1300px) {
      .img-learn-plan{
-       width: 85%;
+       width: 60%;
         margin-top: 24px;
     }
     .pure-g.box-plan.box-first {
