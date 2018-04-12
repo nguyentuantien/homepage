@@ -118,25 +118,20 @@ function PaymentPage(){
         
         for(var index in items){
             var item = items[index];
-            var checkButton   = '#' + item.key + ' .learn-plan-content .select-button';
-            var button   = '#' + item.key + ' .learn-plan-content button';
-            var checker  = '#' + item.key + ' .learn-plan-content .select-check';
+            var checkButton   = document.querySelector('input[name='+item.key+']');
+            if(!checkButton){continue;}
             if(paymentCart.isSelected(item)){
-                document.querySelector(checkButton).classList.remove('hidden');
-                document.querySelector(button).textContent='Bỏ chọn';
-                document.querySelector(checker).checked=true;
+                checkButton.checked=true;
             }else{
-                document.querySelector(checkButton).classList.add('hidden');
-                document.querySelector(button).textContent='Chọn';
-                document.querySelector(checker).checked=false;
+                checkButton.checked=false;
             }
         }
         if(isSelection){
-            displayPaymentPanel='block';
+            document.querySelector('#payment-panel').classList.remove('none-active');
         }else{
-            displayPaymentPanel='none';
+            document.querySelector('#payment-panel').classList.add('none-active');
         }
-        document.querySelector('#payment-panel').style.display=displayPaymentPanel;
+        
         renderOrder();
     }
     
@@ -153,14 +148,6 @@ function PaymentPage(){
         document.querySelector('#reg-date').textContent =new Date().toLocaleDateString('vi-VN');
     }
     
-    function getParentMatching(target,selector){
-        
-        do{
-            target = target.parentElement;    
-        }while(target && target!==document && !target.classList.contains(selector));
-        
-        return target;
-    }
     this.init = function(){
         this.render();
         
@@ -168,12 +155,12 @@ function PaymentPage(){
         
         document.addEventListener('click',function(evt){
             evt.preventDefault();
-            if(evt.target && evt.target.matches('.btn-register, .select-check')){
-              var finder = getParentMatching(evt.target,'learn-plan-content');
+            if(evt.target && evt.target.matches('.checker')){
+              var finder = evt.target;
                 
               if(!finder){return;}
                 
-              paymentCart.toggleItem(finder.getAttribute('data-key'));
+              paymentCart.toggleItem(finder.getAttribute('for'));
               rerender();
             }else if(evt.target.matches('.btn-payment')){
                 paymentCart.setCurrentService(evt.target.getAttribute('data-service'));
