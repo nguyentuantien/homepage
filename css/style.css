@@ -31,6 +31,9 @@ label {
 .content {
     padding: 1em 1em 3em;
 }
+p{
+    line-height:  20pt;
+}
 /*
  * -- LAYOUT STYLES --
  * These are some useful classes which I will need----------------------------------------------------------------------------------
@@ -177,6 +180,7 @@ a.pure-menu-link {
         display: none;
         top: 60px; /* the height of the main nav */
     }
+
 	
     .pure-menu-active>.pure-menu-children
     {
@@ -243,7 +247,9 @@ a.pure-menu-link.active-two.menu-register:hover{
     position: relative;
     z-index: 101;
 }
-
+a.button-register{
+    border-radius: 5px;
+}
 /*--------------- learn-plan----------------------------*/
 ul.title-course li{
     display: inline-block;
@@ -466,9 +472,7 @@ img.pure-img-responsive.logo-footer {
     h1#rain-learn {
         margin-top:  3em;
     }
-    .text-path{
-        color: black;
-    }
+    
        img.logo-img {
        margin-top: 5px;
     }

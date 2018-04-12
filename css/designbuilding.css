@@ -3,12 +3,13 @@ a.link-web {
     color: #ff0;
 }
 .time-course{
-    color: #a79e9e;
     margin-top: -18px;
+    color: #777;
 }
-.time-course strong{
-    color: black;
+.start-learn span{
+    margin-left: 10px;
 }
+
 a.btn-register.btn-register-design {
     background-color: white;
     color: #0d72b9;
@@ -16,7 +17,7 @@ a.btn-register.btn-register-design {
 
 a.start-learn {
     background-color: #0d72b9;
-    padding: 6px 22px;
+    padding: 6px 12px;
     border-radius:  6px;
     font-weight:  bold;
     color:  white;
@@ -116,6 +117,22 @@ a.button-register {
 a.button-register:hover {
     background-color: #0b94dc;
 }
+.subject h1, .subject p{
+        color: white;
+    }
+.text-cv h2, .text-cv p{
+    color: #777;
+}
+#rain-learn{
+    margin-bottom: -7px;
+}
+
+.text-path h1, .text-path p{
+    color: #777;
+}
+.text-white-mobile h1, .text-white-mobile p{
+    color: white;
+}
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
     
@@ -130,12 +147,13 @@ a.button-register:hover {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    .text-white-mobile h1, .text-white-mobile p{
+        color: #777;
+    }
     img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
         display: inherit;
     }
-    h1#rain-learn{
-        margin-top: 0;
-    }
+   
     img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
         display: none;
     }
@@ -143,9 +161,7 @@ a.button-register:hover {
         display: inherit;
          margin-top: 8em;
     }
-    .text-subject p{
-        color: black;
-    }
+   
     .splash-container.container-design{
            background: linear-gradient(202deg, #0d72b9 13%,#0d72b9 43%,#faf7f7 20.4%,#fcfcfc 112%);
            position:  relative;
@@ -162,18 +178,18 @@ a.button-register:hover {
         background-color: transparent;
     }
     #trainform-design{
-        transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
-        -webkit-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
-        -moz-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
-        -o-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
-        -ms-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
-        width: 100%;
-        position: absolute;
-        height: 500px;
-        background: #0d72b9;
-        top: 16px;
-        z-index: 1;
-        left: 116px;
+       transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+         -webkit-transform: rotate(28deg) scale(1.5) skew(180deg) translate(5px);
+         -moz-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+         -o-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+         -ms-transform: rotate(19deg) scale(1.5) skew(180deg) translate(5px);
+         width: 100%;
+         position: absolute;
+         height: 500px;
+         background: #0d72b9;
+         top: 16px;
+         z-index: 1;
+         left: 116px;
     }
     .content.content-design {
         z-index:  10;
@@ -203,9 +219,15 @@ a.button-register:hover {
         margin-left: 159px;
         margin-top: -385px;
     }
+    .subject h1, .subject p{
+        color: #777;
+    }
 }
 
 @media (min-width: 1024px) {
+    .subject{
+        margin-top: 8em;
+    }
    img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
         display: inherit;
     }
@@ -232,6 +254,9 @@ a.button-register:hover {
 }
 /*----------------------------------------- Larger than desktop -----------------------------------------*/
 @media (min-width: 1200px) {
+    .img-banner-design{
+        margin-left: 104px;
+    }
    
 #trainform-design{
    top: 3px;
