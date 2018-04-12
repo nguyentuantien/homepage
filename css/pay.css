@@ -292,7 +292,7 @@ img.img-pay.pure-img-responsive {
    display: none;
 }
 .none-active .img-inactive {
-   display: inherit;
+   display: inline-block;
 }
 .none-active .img-active {
    display: none;
