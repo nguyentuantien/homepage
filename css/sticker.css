@@ -1,3 +1,6 @@
+.pure-menu-link:focus, .pure-menu-link:hover, .pure-menu-children {
+    background-color: #ffffff;
+}
 .splash-content-sticker p{
     color: black;
 }
@@ -96,6 +99,15 @@ input[type="checkbox"] {
 .term:after{
   
 }
+img.logo-img{
+    width: 155px;
+    height: 40px;
+}
+
+.custom-toggle .bar{
+    background-color: black;
+}
+
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
   
@@ -109,6 +121,7 @@ input[type="checkbox"] {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+
     .term{
         height: 13em;
     }
@@ -123,7 +136,7 @@ input[type="checkbox"] {
         z-index: 10;
     }
     .img-banner-sticker-two{
-        width: 35%;
+        width: 40%;
     }
   .trainform{
       transform: rotate(332deg) scale(1.5) skew(-14deg) translate(-32px);
