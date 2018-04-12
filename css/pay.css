@@ -288,6 +288,16 @@ img.img-pay.pure-img-responsive {
    cursor: default;
     visibility: hidden;
 }
+.img-inactive {
+   display: none;
+}
+.none-active .img-inactive {
+   display: inherit;
+}
+.none-active .img-active {
+   display: none;
+}
+
 p.price {
     font-size:  30px;
     font-weight:  bold;
