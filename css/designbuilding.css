@@ -120,9 +120,7 @@ a.button-register:hover {
 .subject h1, .subject p{
         color: white;
     }
-.text-cv h2, .text-cv p{
-    color: #777;
-}
+
 #rain-learn{
     margin-bottom: -7px;
 }
@@ -148,7 +146,7 @@ a.button-register:hover {
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
     .text-white-mobile h1, .text-white-mobile p{
-        color: #777;
+        color: #34495e;
     }
     img.img-banner.pure-img-responsive.img-header-two, img.img-banner.pure-img-responsive.img-header-one{
         display: inherit;
@@ -219,9 +217,7 @@ a.button-register:hover {
         margin-left: 159px;
         margin-top: -385px;
     }
-    .subject h1, .subject p{
-        color: #777;
-    }
+  
 }
 
 @media (min-width: 1024px) {

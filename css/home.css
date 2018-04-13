@@ -110,6 +110,9 @@ div#decorator {
 .text-color-white{
     color: white;
 }
+.learn-path-top h1{
+        color: white;
+    }
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
    
@@ -125,6 +128,9 @@ div#decorator {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    .learn-path-top p, .learn-path-top h1{
+        color: #34495e;
+    }
     .img-learn-plan {
         width: 80%;
         margin-top: 34px;
