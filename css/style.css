@@ -417,6 +417,14 @@ p.name-author {
 img.pure-img-responsive.logo-footer {
        display: none;
 }
+.pure-menu-horizontal .pure-menu-list {
+    display: inline-block;
+}
+@-moz-document url-prefix(){
+.pure-menu-horizontal .pure-menu-list {
+    display: inline-block;
+}
+}
 /* -----------------------------------------Larger than mobile -----------------------------------------*/
 @media (min-width: 400px) {
     img.pure-img-responsive.logo-footer {
