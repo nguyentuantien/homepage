@@ -148,9 +148,6 @@ a.pure-menu-link {
           transform: rotate(-45deg);
       }
       
-    .custom-menu-3 {
-       text-align: left;
-    }
 
     
     .custom-wrapper{
@@ -444,6 +441,7 @@ img.pure-img-responsive.logo-footer {
 
 /* -----------------------------------------Larger than tablet -----------------------------------------*/
 @media (min-width: 750px) {
+    
     .menu-register{
     display: inline-block;
     color: #0d72b9;
@@ -664,6 +662,9 @@ img.pure-img-responsive.logo-footer {
     }
     ul.pure-menu-list li:hover > ul{
             box-shadow: 2px 16px 18px 2px rgba(0,0,0,0.24);
+    }
+    .pure-menu> ul.pure-menu-list{
+        float: left;
     }
 }
 @media (min-width: 751px) {
