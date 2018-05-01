@@ -1,3 +1,4 @@
+
 *{
     box-sizing: border-box;
     font-family: 'Nunito',sans-serif;
@@ -49,7 +50,12 @@ label {
 .pure-menu-fixed {
     z-index: 999;
 }
-
+.pure-menu-item {
+    line-height: 28pt;
+}
+a.pure-menu-link {
+    line-height: 28pt;
+}
 .custom-wrapper {
           background-color: white;
           -webkit-font-smoothing: antialiased;
@@ -65,7 +71,7 @@ label {
     color: white;
 }
       .custom-wrapper.open {
-          height: 14em;
+          height: 27em;
       }
       
       .custom-menu-3 {
@@ -122,12 +128,11 @@ label {
        text-align: left;
     }
 
-    a.pure-menu-link {
-        line-height: 25px;
-    }
+    
     .custom-wrapper{
         width: 100%;
         height: 57px;
+        box-shadow: 0 -4px 20px rgba(0,0,0,.2);
     }
 
 img.logo-img {
@@ -175,14 +180,18 @@ ul.pure-menu-list ul li {
     display: inline-block;
     font-weight: bold;
     text-decoration: none;
-    padding: 2px 20px;
+    padding: 5px 28px;
     border-radius: 36px;
 }
 .btn-learn:hover, .btn-register:hover{
     text-decoration: none;
 }
 .btn-learn{
-    background-color: orangered;
+   background-color: orangered;
+    margin-bottom: 10px;
+    width: 125px;
+    text-align: center;
+    margin-right: 10px;
 }
 .btn-register{
     border: 1px solid white;
@@ -210,6 +219,7 @@ ul.title-course{
 }
 .btn-trial{
     background-color: #0d72b9;
+    text-align: center;
 }
 .btn-register-trial{
     color: #0d72b9;
@@ -217,7 +227,9 @@ ul.title-course{
     border: 1px solid #0d72b9;
 }
 .splash-content h1 {
-    font-size: 26px;
+   font-size: 22pt;
+    line-height: 42px;
+    margin-top: 73px;
 }
 .pure-g.box-plan {
     margin-bottom: 3em;
@@ -284,6 +296,7 @@ ul.title-course.title-course-two li {
 }
 .accordion.active{
     color: red;
+    width: 125px;
 }
 .accordion.panel-two.active{
     color: #0d72b9;
